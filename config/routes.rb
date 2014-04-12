@@ -1,4 +1,12 @@
 Babytime::Application.routes.draw do
+  get "page/index"
+  get "page/about_us"
+  get "page/why_choose_us"
+  get "page/price"
+  get "page/photo_gallery"
+  get "page/contact_us"
+
+  root :to => "page#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
