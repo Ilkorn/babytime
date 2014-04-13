@@ -1,6 +1,7 @@
 Babytime::Application.routes.draw do
   get "page/index"
   get "page/about_us"
+  get "page/service"
   get "page/why_choose_us"
   get "page/price"
   get "page/photo_gallery"

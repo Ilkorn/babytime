@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Babytime</title>
+  <link rel="shortcut icon" href="http://darasgarden.com/favicon.ico" type="image/x-icon">
+  <link href='http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="special_body">
+<div id="wrapper">
+  <%= render 'shared/menu' %><!--header1-->
+
+  <div id="feature">
+    <object type="application/x-shockwave-flash" data="http://darasgarden.com/swf/gallery.swf" width="720" height="320">
+      <param name="movie" value="/swf/gallery.swf">
+      <param name="base" value=".">
+      <param name="quality" value="high">
+    </object></div><!--feature-->
+
+  <div id="featurettes">
+    <a href="http://darasgarden.com/weddings/">
+      <img src="../images/wedding.jpg" alt="plan your wedding" width="235" height="188" onmouseover="this.src='/images/main/wedding-on.jpg'" onmouseout="this.src='/images/main/wedding.jpg'">
+    </a>
+    <a href="http://darasgarden.com/bloom/">
+      <img src="../images/bloom.jpg" alt="what’s in bloom?" width="235" height="188" onmouseover="this.src='/images/main/bloom-on.jpg'" onmouseout="this.src='/images/main/bloom.jpg'">
+    </a>
+    <a href="http://darasgarden.com/photos/">
+      <img src="http://darasgarden.com/images/main/photos-on.jpg" alt="see more photos" width="235" height="188" onmouseover="this.src='/images/main/photos-on.jpg'" onmouseout="this.src='/images/main/photos.jpg'">
+    </a>
+  </div><!--featurettes-->
+
+  <div id="content">
+
+
+    <%= yield %>
+
+
+  </div><!--content-->
+
+  <%= render 'shared/side_form' %><!--visit-->
+  <%= render 'shared/footer' %>
+</div><!--wrapper-->
+</body>
+</html>

@@ -1,0 +1,54 @@
+html, body, 
+h1, h2, h3, h4, h5, h6, 
+form, fieldset,
+p, ol, ul, li, 
+dt, dd, dl,
+table, th, tr, td { margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+img, fieldset, input, textarea, select { border: 0; margin: 0; }
+
+body {
+	background: #fff url(../images/secondary_bg.jpg) no-repeat center top;
+	color: #555;
+	font: 62.5% Helvetica, Arial, sans-serif;
+	padding-top: 14px;
+	text-align: center;
+}
+html>body { font-size: 10px; }
+.block { display: block; }
+.icon { vertical-align: middle; }
+.clear { clear: both; }
+.left { display: inline; float: left; }
+.right { display: inline; float: right; }
+a { text-decoration: none; }
+
+#wrapper { margin: 0 auto; text-align: left; width: 760px; }
+#header1 { height: 80px; }
+
+#logo { float: left; }
+ul#nav1 { float: left; height: 44px; list-style: none; width: 516px; }
+#nav1 li { float: left; height: 44px; margin: 0; padding: 0; text-indent: -1000em; }
+#nav1 li a { display: block; height: 100%; overflow: hidden; width: 100%; }
+#n-about { width: 68px; }
+#n-weddings { width: 94px; }
+#n-events { width: 125px; }
+#n-photos { width: 127px; }
+#n-contact { width: 102px; }
+#n-about a, #n-weddings a, #n-events a, #n-photos a, #n-contact a { background: url(nav.gif); }
+#n-about a:hover { background-position: 0 44px; }
+#n-weddings a { background-position: -68px 0; }
+#n-weddings a:hover { background-position: -68px 44px; }
+#n-events a { background-position: -162px 0; }
+#n-events a:hover { background-position: -162px 44px; }
+#n-photos a { background-position: -287px 0; }
+#n-photos a:hover { background-position: -287px 44px; }
+#n-contact a { background-position: -414px 0; }
+#n-contact a:hover { background-position: -414px 44px; }
+
+#wrapper .clearf { clear: both; height: 30px; }
+#footer1 { background: url(div.gif) no-repeat; margin: 0 20px; padding: 30px 0; }
+#footer1 .logo { float: left; margin: 0 59px 0 24px; }
+#footer1 p { color: #663; font: 1.1em/1.8 Georgia, serif; }
+#footer1 p a { color: #663; margin: 0 5px; }
+#footer1 p .main { margin-left: 0; }
+#footer1 p a:hover { color: #000; }

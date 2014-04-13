@@ -1,0 +1,19 @@
+body { background: #fff url(main_bg.jpg) no-repeat center top; }
+
+#feature {
+	height: 320px;
+	margin-left: 20px;
+	width: 720px;
+}
+#featurettes { height: 253px; margin-left: 16px; }
+#featurettes img { float: left; margin: 33px 11px 0 0; }
+
+#content ul { 
+	display: inline;
+	float: left;
+	width: 140px;
+}
+
+#content .left { background: url(div.gif) no-repeat 206px 35px; width: 207px; }
+#content .left h3, #content .left p { margin-right: 10px; }
+#content .right { width: 209px; }
