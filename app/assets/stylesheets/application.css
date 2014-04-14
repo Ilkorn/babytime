@@ -25,14 +25,16 @@ img, fieldset, input, textarea, select { border: 0; margin: 0; }
     background: #fff url(secondary_bg.jpg) no-repeat center top;
     background-position-y: 40px;
     color: #555;
-    font: 62.5% Helvetica, Arial, sans-serif;
+    font: 62.5% 'Oranienbaum', serif, sans-serif;
     text-align: center;
+    text-wrap: normal;
 }
 .special_body {
     background: #fff url(main_bg.jpg) no-repeat center top;
     background-position-y: 40px;
-    font: 62.5% Helvetica, Arial, sans-serif;
+    font: 62.5% 'Oranienbaum', serif, sans-serif;
     text-align: center;
+    text-wrap: normal;
 }
 
 .toolbar {
@@ -71,7 +73,8 @@ ul#nav { float: left; height: 44px; list-style: none; width: 760px; }
 #wrapper .clearf { clear: both; height: 30px; }
 #footer { background: url(div.gif) no-repeat; margin: 0 20px; padding: 30px 0; }
 #footer .logo { float: left; margin: 0 59px 0 24px; }
-#footer p { color: #663; font: 1.1em/1.8 Georgia, serif; text-align: right}
+
+#footer p { color: #663; font: 1.1em/1.8 'Oranienbaum', serif, text-align: right}
 #footer p a { color: #663; margin: 0 5px; }
 #footer p .main { margin-left: 0; }
 #footer p a:hover { color: #000; }
@@ -104,7 +107,7 @@ ul#nav { float: left; height: 44px; list-style: none; width: 760px; }
 
 #content .block { margin-bottom: -0.6em; }
 #content p, #visit p { font-size: 1.2em; line-height: 1.8; margin: 0.6em 0 1.2em 0; }
-#content h3, #content p span { color: #366; font: 2em Georgia, serif; }
+#content h3, #content p span { color: #366; font: 2em 'Oranienbaum', serif; }
 #content h3 a { color: #366; }
 #content p span { font-size: 20px; }
 #content p a { color: #933; text-decoration: underline; }

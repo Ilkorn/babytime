@@ -3,6 +3,7 @@
 <head>
   <title>Babytime</title>
   <link rel="shortcut icon" href="http://darasgarden.com/favicon.ico" type="image/x-icon">
+  <link href='http://fonts.googleapis.com/css?family=Oranienbaum&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
@@ -10,7 +11,11 @@
 </head>
 <body class="special_body">
 <div id="wrapper">
-  <%= render 'shared/menu' %><!--header1-->
+  <% if session[:locale] == 'ru'%>
+    <%= render 'shared/menu_ru' %>
+  <% else %>
+    <%= render 'shared/menu' %>
+  <% end %>
 
   <div id="feature">
     <object type="application/x-shockwave-flash" data="http://darasgarden.com/swf/gallery.swf" width="720" height="320">
@@ -39,7 +44,11 @@
 
   </div><!--content-->
 
-  <%= render 'shared/side_form' %><!--visit-->
+  <% if session[:locale] == 'ru'%>
+      <%= render 'shared/side_form_ru' %>
+  <% else %>
+      <%= render 'shared/side_form' %>
+  <% end %>
   <%= render 'shared/footer' %>
 </div><!--wrapper-->
 </body>
