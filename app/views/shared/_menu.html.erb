@@ -1,3 +1,17 @@
+<div class="toolbar">
+    <div>
+        <span style="margin-left: 200px;"><a class="font-medium" href="tel:+1.800.597.1056">1.800.597.1056</a></span>
+        <span style="margin-left: 20px;"><a class="font-medium" href="tel:+954.990.4200">954.990.4200</a></span>
+        <span style="margin-left: 100px;">
+        <%= link_to(:action => action_name, :locale => 'ru') do %>
+            <%= image_tag 'rus_flag.png' %>
+        <% end %>
+        <%= link_to(:action => action_name, :locale => 'default') do %>
+            <%= image_tag 'uk_flag.png' %>
+        <% end %>
+        </span>
+    </div>
+</div>
 <div id="header" class="handwritten">
   <ul id="nav">
     <li>
@@ -6,22 +20,22 @@
       </a>
     </li>
     <li style="margin-left: 40px;">
-      <%= link_to 'About', page_about_us_path %>
+      <%= link_to 'О нас', page_about_us_path %>
     </li>
     <li>
-      <%= link_to 'Service', page_service_path %>
+      <%= link_to 'Услуги', page_service_path %>
     </li>
     <li>
-      <%= link_to 'Why to choose us', page_why_choose_us_path %>
+      <%= link_to 'Почему мы', page_why_choose_us_path %>
     </li>
     <li>
-      <%= link_to 'Price', page_price_path %>
+      <%= link_to 'Цены', page_price_path %>
     </li>
     <li>
-      <%= link_to 'Photo gallery', page_photo_gallery_path %>
+      <%= link_to 'Фото галерея', page_photo_gallery_path %>
     </li>
     <li>
-      <%= link_to 'Contact us', page_contact_us_path %>
+      <%= link_to 'Контакты', page_contact_us_path %>
     </li>
   </ul><!--nav1-->
 </div>

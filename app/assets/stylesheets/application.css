@@ -23,12 +23,29 @@ img, fieldset, input, textarea, select { border: 0; margin: 0; }
 
 .common_body {
     background: #fff url(secondary_bg.jpg) no-repeat center top;
+    background-position-y: 40px;
     color: #555;
     font: 62.5% Helvetica, Arial, sans-serif;
-    padding-top: 14px;
     text-align: center;
 }
-.special_body { background: #fff url(main_bg.jpg) no-repeat center top; }
+.special_body {
+    background: #fff url(main_bg.jpg) no-repeat center top;
+    background-position-y: 40px;
+    font: 62.5% Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #cccccc;
+}
+.toolbar div {margin: 0 auto; width: 700px; height: 40px;}
+.toolbar a {color: #663; font-size: 20px;}
+.toolbar a:hover {color: #633; font-size: 20px;}
+
 html>body { font-size: 10px; }
 
 .block { display: block; }
@@ -39,7 +56,7 @@ html>body { font-size: 10px; }
 a { text-decoration: none; }
 
 #wrapper { margin: 0 auto; text-align: left; width: 760px; }
-#header { height: 80px; }
+#header { height: 84px; margin-top: 50px;}
 
 ul#nav { float: left; height: 44px; list-style: none; width: 760px; }
 #nav li {
@@ -123,3 +140,5 @@ ul#nav { float: left; height: 44px; list-style: none; width: 760px; }
 .font-small {font-size: 16px}
 .font-medium {font-size: 20px}
 .font-large {font-size: 24px}
+
+
