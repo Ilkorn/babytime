@@ -25,14 +25,14 @@ img, fieldset, input, textarea, select { border: 0; margin: 0; }
     background: #fff url(secondary_bg.jpg) no-repeat center top;
     background-position-y: 40px;
     color: #555;
-    font: 62.5% 'Oranienbaum', serif, sans-serif;
+    font: 72.5% serif, sans-serif;
     text-align: center;
     text-wrap: normal;
 }
 .special_body {
     background: #fff url(main_bg.jpg) no-repeat center top;
     background-position-y: 40px;
-    font: 62.5% 'Oranienbaum', serif, sans-serif;
+    font: 72.5% serif, sans-serif;
     text-align: center;
     text-wrap: normal;
 }
@@ -86,7 +86,14 @@ ul#nav { float: left; height: 44px; list-style: none; width: 760px; }
     width: 720px;
 }
 #featurettes { height: 253px; margin-left: 16px; }
-#featurettes img { float: left; margin: 33px 11px 0 0; }
+#featurettes div { float: left; margin: 33px 11px 0 0; overflow: hidden; position: relative;}
+#featurettes img {
+    height: 184px;
+    width: 232px;
+}
+.image_over {
+    position: absolute;
+}
 
 #content ul {
     display: inline;
@@ -143,5 +150,11 @@ ul#nav { float: left; height: 44px; list-style: none; width: 760px; }
 .font-small {font-size: 16px}
 .font-medium {font-size: 20px}
 .font-large {font-size: 24px}
+
+#feature .item img{
+    display: block;
+    width: 100%;
+    height: 320px;
+}
 
 

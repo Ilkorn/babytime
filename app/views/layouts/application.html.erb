@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Babytime</title>
-  <link rel="shortcut icon" href="http://darasgarden.com/favicon.ico" type="image/x-icon">
-  <link href='http://fonts.googleapis.com/css?family=Oranienbaum&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body class="common_body">
-<div id="wrapper">
-  <% if session[:locale] == 'ru'%>
-      <%= render 'shared/menu_ru' %>
-  <% else %>
-      <%= render 'shared/menu' %>
-  <% end %>
-  <div id="content">
+    <head>
+      <title>Babytime</title>
+      <link rel="shortcut icon" href="http://darasgarden.com/favicon.ico" type="image/x-icon">
+      <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <link href='http://fonts.googleapis.com/css?family=Oranienbaum&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+      <%= stylesheet_link_tag    "application", :media => "all" %>
+      <%= javascript_include_tag "application" %>
+      <%= csrf_meta_tags %>
+    </head>
 
-    <%= yield %>
+    <body class="common_body">
+        <div id="wrapper">
 
-  </div>
+          <!--menu-->
+          <% if session[:locale] == 'ru'%>
+              <%= render 'shared/menu_ru' %>
+          <% else %>
+              <%= render 'shared/menu' %>
+          <% end %>
 
-  <% if session[:locale] == 'ru'%>
-      <%= render 'shared/side_form_ru' %>
-  <% else %>
-      <%= render 'shared/side_form' %>
-  <% end %>
-  <%= render 'shared/footer' %>
-</div>
-</body>
+          <!--content-->
+          <div id="content">
+
+            <%= yield %>
+
+          </div>
+
+          <!--side bar-->
+          <% if session[:locale] == 'ru'%>
+              <%= render 'shared/side_form_ru' %>
+          <% else %>
+              <%= render 'shared/side_form' %>
+          <% end %>
+
+          <!--footer-->
+          <%= render 'shared/footer' %>
+        </div>
+    </body>
 </html>

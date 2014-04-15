@@ -1,55 +1,91 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Babytime</title>
-  <link rel="shortcut icon" href="http://darasgarden.com/favicon.ico" type="image/x-icon">
-  <link href='http://fonts.googleapis.com/css?family=Oranienbaum&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body class="special_body">
-<div id="wrapper">
-  <% if session[:locale] == 'ru'%>
-    <%= render 'shared/menu_ru' %>
-  <% else %>
-    <%= render 'shared/menu' %>
-  <% end %>
+    <head>
+      <title>Babytime</title>
+      <link rel="shortcut icon" href="http://darasgarden.com/favicon.ico" type="image/x-icon">
+      <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script src="owl.carousel.min.js"></script>
+      <link href='http://fonts.googleapis.com/css?family=Oranienbaum&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+      <%= stylesheet_link_tag    "application", :media => "all" %>
+      <%= javascript_include_tag "application" %>
+      <%= csrf_meta_tags %>
+      <script>
+          $(document).ready(function() {
 
-  <div id="feature">
-    <object type="application/x-shockwave-flash" data="http://darasgarden.com/swf/gallery.swf" width="720" height="320">
-      <param name="movie" value="/swf/gallery.swf">
-      <param name="base" value=".">
-      <param name="quality" value="high">
-    </object></div><!--feature-->
+              var owl = $("#feature");
 
-  <div id="featurettes">
-    <a href="http://darasgarden.com/weddings/">
-      <img src="../images/wedding.jpg" alt="plan your wedding" width="235" height="188" onmouseover="this.src='/images/main/wedding-on.jpg'" onmouseout="this.src='/images/main/wedding.jpg'">
-    </a>
-    <a href="http://darasgarden.com/bloom/">
-      <img src="../images/bloom.jpg" alt="what’s in bloom?" width="235" height="188" onmouseover="this.src='/images/main/bloom-on.jpg'" onmouseout="this.src='/images/main/bloom.jpg'">
-    </a>
-    <a href="http://darasgarden.com/photos/">
-      <img src="http://darasgarden.com/images/main/photos-on.jpg" alt="see more photos" width="235" height="188" onmouseover="this.src='/images/main/photos-on.jpg'" onmouseout="this.src='/images/main/photos.jpg'">
-    </a>
-  </div><!--featurettes-->
+              owl.owlCarousel({
+                  navigation : false,
+                  autoPlay : 2500,
+                  pagination : false,
+                  singleItem : true,
+                  transitionStyle : "fadeUp"
+              });
 
-  <div id="content">
+          });
+      </script>
+    </head>
+    <body class="special_body">
+        <div id="wrapper">
 
+          <!--menu-->
+          <% if session[:locale] == 'ru'%>
+            <%= render 'shared/menu_ru' %>
+          <% else %>
+            <%= render 'shared/menu' %>
+          <% end %>
 
-    <%= yield %>
+          <!--carousel-->
+          <div id="feature" class="owl-carousel owl-theme">
 
+              <div class="item"><%= image_tag '1.jpg' %></div>
+              <div class="item"><%= image_tag '2.jpg' %></div>
+              <div class="item"><%= image_tag '3.jpg' %></div>
 
-  </div><!--content-->
+           <!--<object type="application/x-shockwave-flash" data="http://darasgarden.com/swf/gallery.swf" width="720" height="320">-->
+              <!--<param name="movie" value="/swf/gallery.swf">-->
+              <!--<param name="base" value=".">-->
+              <!--<param name="quality" value="high">-->
+            <!--</object>-->
+          </div>
 
-  <% if session[:locale] == 'ru'%>
-      <%= render 'shared/side_form_ru' %>
-  <% else %>
-      <%= render 'shared/side_form' %>
-  <% end %>
-  <%= render 'shared/footer' %>
-</div><!--wrapper-->
-</body>
+          <!--feature icon-->
+          <div id="featurettes">
+            <div>
+                <a href="http://darasgarden.com/weddings/" style="position: relative;">
+                  <%= image_tag 'picture_frame_clean.png', :class => 'image_over' %>
+                  <%= image_tag 'organization.jpg'  %>
+                </a>
+            </div>
+            <div>
+              <a href="http://darasgarden.com/weddings/" style="position: relative;">
+                <%= image_tag 'picture_frame_clean.png', :class => 'image_over' %>
+                <%= image_tag 'immigration.jpg' %>
+              </a>
+            </div>
+            <div>
+              <a href="http://darasgarden.com/weddings/" style="position: relative;">
+                <%= image_tag 'picture_frame_clean.png', :class => 'image_over' %>
+                <%= image_tag 'delivery_support.jpg' %>
+              </a>
+            </div>
+          </div>
+
+          <!--content-->
+          <div id="content">
+            <%= yield %>
+          </div>
+
+          <!--side bar-->
+          <% if session[:locale] == 'ru'%>
+              <%= render 'shared/side_form_ru' %>
+          <% else %>
+              <%= render 'shared/side_form' %>
+          <% end %>
+
+          <!--footer-->
+          <%= render 'shared/footer' %>
+        </div>
+    </body>
 </html>
