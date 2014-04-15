@@ -23,7 +23,7 @@ img, fieldset, input, textarea, select { border: 0; margin: 0; }
 
 .common_body {
     background: #fff url(secondary_bg.jpg) no-repeat center top;
-    background-position-y: 40px;
+    background-position: center 40px;
     color: #555;
     font: 72.5% serif, sans-serif;
     text-align: center;
@@ -31,7 +31,7 @@ img, fieldset, input, textarea, select { border: 0; margin: 0; }
 }
 .special_body {
     background: #fff url(main_bg.jpg) no-repeat center top;
-    background-position-y: 40px;
+    background-position: center 40px;
     font: 72.5% serif, sans-serif;
     text-align: center;
     text-wrap: normal;
