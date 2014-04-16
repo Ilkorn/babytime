@@ -95,4 +95,18 @@
     <textarea name="details" cols="10" rows="5" class="textarea"></textarea><br>
     <input name="submit" type="image" class="submit" value="Отправить" src="<%= image_path 'submit.gif' %>" alt="submit">
   </form>
+
+  <div id="fb-root"></div>
+
+  <script>
+      (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1&appId=695068907206414";
+          fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <div class="fb-activity" data-site="developers.facebook.com" data-action="likes, recommends" data-width="205" data-max-age="10" data-colorscheme="light" data-header="true"></div>
 </div>
