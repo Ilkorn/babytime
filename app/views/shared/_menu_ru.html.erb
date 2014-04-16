@@ -1,12 +1,17 @@
 <div class="toolbar">
     <div>
-        <span style="margin-left: 200px;"><a class="font-medium" href="tel:+1.800.597.1056">1.800.597.1056</a></span>
-        <span style="margin-left: 20px;"><a class="font-medium" href="tel:+954.990.4200">954.990.4200</a></span>
+        <span style="margin-left: 50px">
+            <span style="margin-left: 20;"><a class="font-medium" href="tel:+1.800.597.1056">1.800.597.1056</a></span>
+            <span style="margin-left: 20px;"><a class="font-medium" href="tel:+954.990.4200">954.990.4200</a></span>
+        </span>
+        <span>
+            <span style="margin-left: 20px;"><a class="font-medium" href="mailto:usbabytime@yahoo.com">usbabytime@yahoo.com</a></span>
+        </span>
         <span style="margin-left: 100px;">
         <%= link_to(:action => action_name, :locale => 'ru') do %>
             <%= image_tag 'rus_flag.png' %>
         <% end %>
-        <%= link_to(:action => action_name, :locale => 'default') do %>
+          <%= link_to(:action => action_name, :locale => 'default') do %>
             <%= image_tag 'uk_flag.png' %>
         <% end %>
         </span>
