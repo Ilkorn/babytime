@@ -1,0 +1,33 @@
+<div class="toolbar">
+  <div>
+        <span style="position: relative; top: -8px;">
+            <span><a class="font-medium" href="tel:+1.800.597.1056">1.800.597.1056</a></span>
+            <span style="margin-left: 10px;"><a class="font-medium" href="tel:+954.990.4200">954.990.4200</a></span>
+        </span>
+
+        <span style="position: relative; top: -8px; margin-left: 20px;">
+          <a class="font-medium" href="mailto:usbabytime@yahoo.com">usbabytime@yahoo.com</a>
+        </span>
+
+        <span style="margin-left: 20px;">
+          <a href="https://www.facebook.com/groups/450956344973158/">
+            <%= image_tag 'facebook.png', :height => 32, :width => 32 %>
+          </a>
+          <a href="skype:usbabytime?call">
+            <%= image_tag 'skype.png', :height => 32, :width => 32  %>
+          </a>
+          <a href="http://vk.com/usbabytime">
+            <%= image_tag 'vk.png', :height => 32, :width => 32  %>
+          </a>
+        </span>
+
+        <span style="margin-left: 20px;">
+        <%= link_to(:action => action_name, :locale => 'ru') do %>
+            <%= image_tag 'rus_flag.png' %>
+        <% end %>
+          <%= link_to(:action => action_name, :locale => 'default') do %>
+            <%= image_tag 'uk_flag.png' %>
+        <% end %>
+        </span>
+  </div>
+</div>
