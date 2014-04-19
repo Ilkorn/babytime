@@ -3,8 +3,23 @@
     <span class="handwritten" style="color: white; font-size: 1.2em">лучше, интереснее и насыщенее,</span>
     независимо от социального класса, обстоятельств и места рождения.
 <% end %>
+<% content_for :subLiner1 do %>
+    <div class="liner handwritten font-small" style="text-align: center; padding-top: 5px;">
+        Организационные услуги
+    </div>
+<% end %>
+<% content_for :subLiner2 do %>
+    <div class="liner handwritten font-small" style="text-align: center; padding-top: 5px; line-height: 85%;; ">
+        Сопровождение беременности и родов
+    </div>
+<% end %>
+<% content_for :subLiner3 do %>
+    <div class="liner handwritten font-small" style="text-align: center; padding-top: 5px; line-height: 85%;; ">
+        Иммиграционные и ивестиционные услуги
+    </div>
+<% end %>
 <div>
-    <h1 class="underlined font-medium">Позвольте помочь вам начать новую <em class="handwritten" style="font-size: 1.2em;">жизнь.</em></h1>
+    <h1 class="underlined font-medium">Позвольте помочь вам начать новую <em class="handwritten" style="font-size: 1.2em;">жизнь...</em></h1>
     <p>
       При разработке концепции нашего сервиса мы исходили из того, что нашим клиентам гораздо проще
       иметь решение всех своих задач и вопросов в одном месте. Поэтому мы оказываем <span style="font-size: 1.5em;">организационную,
@@ -32,25 +47,20 @@
       <li>Услуги по аренде авто</li>
       <li>Трансфер и сопровождение</li>
     </ul>
-
-    <div class="clear left" style="text-align: justify;">
+<div class="clear"></div>
       <h3>Нас рекомендуют</h3>
-      <p>
+      <p style="text-align: justify;">
         Мы - ведущая бизнес-группа компаний, специализирующаяся на реализации инициатив, которые направлены не
         только на  организацию и сопровождению родов в США, но и на предоставлении юридических и иммиграционных услуг,
         осуществление инвестиционных проектов и обеспечение устойчивого развития различных бизнесов. В бизнес-группу
         входят компании <%= link_to 'US BABY TIME', 'http://usbabytime.com' %>, <%= link_to 'Credit Services of America', 'http://www.creditservicesamerica.com' %>,
         <%= link_to 'American EB-5 Centers', 'http://americaneb5centers.com' %>, <%= link_to 'Data Business Systems', 'http://google.com' %>
-        и многие другие.
-      </p>
-      <p>
+        и многие другие.<br>
         Мы хотим узнать Ваше мнение о нашей работе и узнать больше о вашем личном опыте в США.
         Посетите раздел <%= link_to 'Отзывы', 'http://google.com' %> чтобы оставить комментарии и узнать, что о нас пишут.
-        С авторами отзывов Вы можете пообщаться на форуме <%= link_to 'Отзывы', 'https://www.facebook.com/groups/450956344973158/' %>.
+        С авторами отзывов Вы можете пообщаться на форуме <%= link_to 'Facebook', 'https://www.facebook.com/groups/450956344973158/' %>.
       </p>
-    </div><!--left-->
 
-    <div class="right">
       <h3>К вашим услугам 24/7</h3>
       <p style="text-align: justify;">
         В нашей команде работают только квалифицированные специалисты различного профиля
@@ -62,5 +72,4 @@
         и агентствами полного цикла профессиональных операций в области корпоративных мероприятий,
         бизнес трэвел <%= link_to nil, 'http://maximice.ru' %> и другими.
       </p>
-    </div><!--right-->
 </div>

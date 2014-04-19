@@ -14,6 +14,9 @@
     <body class="common_body">
         <div id="wrapper">
 
+          <!--toolbar-->
+          <%= render 'shared/toolbar' %>
+
           <!--menu-->
           <% if session[:locale] == 'ru'%>
               <%= render 'shared/menu_ru' %>
