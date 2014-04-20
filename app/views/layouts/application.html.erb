@@ -18,11 +18,13 @@
           <%= render 'shared/toolbar' %>
 
           <!--menu-->
+          <div style="font-size: 1.6em;">
           <% if session[:locale] == 'ru'%>
               <%= render 'shared/menu_ru' %>
           <% else %>
               <%= render 'shared/menu' %>
           <% end %>
+          </div>
 
           <!--content-->
           <div id="content">
