@@ -7,6 +7,9 @@
       <link href='http://fonts.googleapis.com/css?family=Oranienbaum&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
       <%= stylesheet_link_tag    "application", :media => "all" %>
+      <%= stylesheet_link_tag    "owl.theme", :media => "all" %>
+      <%= stylesheet_link_tag    "owl.carousel", :media => "all" %>
+      <%= stylesheet_link_tag    "owl.transitions", :media => "all" %>
       <%= javascript_include_tag "application" %>
       <%= csrf_meta_tags %>
     </head>
@@ -18,7 +21,7 @@
           <%= render 'shared/toolbar' %>
 
           <!--menu-->
-          <div style="font-size: 1.6em;">
+          <div>
           <% if session[:locale] == 'ru'%>
               <%= render 'shared/menu_ru' %>
           <% else %>
