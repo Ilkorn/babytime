@@ -1,6 +1,6 @@
 <div class="clearf"></div>
 <div id="footer">
-  <div class="left" style="margin-left: 200px">
+  <div class="left" style="margin-left: 150px">
       <%= image_tag 'logo_light.jpg', :height => 100, :width => 110 %>
   </div>
   <div class="left" style="margin-left: 100px">
@@ -12,4 +12,12 @@
       <p>Tel: 1.800-597-1056</p>
       <p>Fax: 1.801-847-6969</p>
   </div>
+   <div class="handwritten" style="margin-left:50px; font-size: 8px;">
+          <% if session[:locale] == 'ru'%>
+              <%= render 'shared/menu_ru' %>
+          <% else %>
+              <%= render 'shared/menu' %>
+          <% end %>
+   </div>
+
 </div><!--footer1-->

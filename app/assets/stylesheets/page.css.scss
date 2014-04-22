@@ -108,7 +108,7 @@ ul#nav {
   float: left;
   height: 44px;
   list-style: none;
-  width: 760px;
+  width: 100%;
 
   li {
     float: left;
@@ -256,6 +256,24 @@ ul#nav {
     ul {
       width: 140px;
       margin-left: 5px;
+    }
+  }
+
+  ol.numeric_list {
+    color: $color-app-green;
+    font-size: 1.2em;
+    line-height: 1.8;
+    list-style-position:inside;
+    margin: 0.6em 0 1.2em 0;
+    li {
+      background: no-repeat;
+      a {
+        color: #933;
+        text-decoration: underline;
+      }
+      a:hover {
+        color: #000;
+      }
     }
   }
 

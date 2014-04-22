@@ -21,13 +21,13 @@
           <%= render 'shared/toolbar' %>
 
           <!--menu-->
-          <div>
-          <% if session[:locale] == 'ru'%>
-              <%= render 'shared/menu_ru' %>
-          <% else %>
-              <%= render 'shared/menu' %>
-          <% end %>
-          </div>
+            <div id="header" class="handwritten" style="width: 760px;">
+              <% if session[:locale] == 'ru'%>
+                  <%= render 'shared/menu_ru' %>
+              <% else %>
+                  <%= render 'shared/menu' %>
+              <% end %>
+            </div>
 
           <!--content-->
           <div id="content">
