@@ -213,7 +213,7 @@ ul#nav {
   .block {
     margin-bottom: -0.6em;
   }
-  p, #visit p {
+  p{
     font-size: 1.2em;
     line-height: 1.8;
     margin: 0.6em 0 1.2em 0;
@@ -247,6 +247,18 @@ ul#nav {
     background: url(dot.gif) no-repeat 0 9px;
     padding-left: 8px;
   }
+
+  .tree-colomn {
+    li {
+      font-size: 1.1em;
+      width: 140px;
+    }
+    ul {
+      width: 140px;
+      margin-left: 5px;
+    }
+  }
+
 }
 
 #visit {
@@ -254,11 +266,18 @@ ul#nav {
   float: right;
   margin-right: 45px;
   width: 205px;
+
   label {
     color: $color-app-green;
     display: block;
     font-size: 1.2em;
     margin-top: 0.6em;
+  }
+
+  p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin: 0.6em 0 1.2em 0;
   }
 
 }
