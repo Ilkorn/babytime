@@ -214,7 +214,8 @@ ul#nav {
     margin-bottom: -0.6em;
   }
   p{
-    font-size: 1.2em;
+    color: #555;
+    font-size: 1.1em;
     line-height: 1.8;
     margin: 0.6em 0 1.2em 0;
   }
@@ -250,7 +251,7 @@ ul#nav {
 
   .tree-colomn {
     li {
-      font-size: 1.12em;
+      font-size: 1em;
       width: 140px;
     }
     ul {
@@ -261,7 +262,7 @@ ul#nav {
 
   ol.numeric_list {
     color: $color-app-green;
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.8;
     list-style-position:inside;
     margin: 0.6em 0 1.2em 0;
@@ -288,12 +289,13 @@ ul#nav {
   label {
     color: $color-app-green;
     display: block;
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-top: 0.6em;
   }
 
   p {
-    font-size: 1.2em;
+    color: #555;
+    font-size: 1.1em;
     line-height: 1.8;
     margin: 0.6em 0 1.2em 0;
   }
@@ -304,7 +306,7 @@ ul#nav {
   background: #ebe5d4;
   color: #555;
   font-family: inherit;
-  font-size: 1.2em;
+  font-size: 1.1em;
   border-top: 2px solid #d7d2c3;
   border-left: 2px solid #d7d2c3;
 }
