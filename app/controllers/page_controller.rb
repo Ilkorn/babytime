@@ -21,6 +21,15 @@ class PageController < ApplicationController
   end
 
   def contact_us
+    end
+
+  def immigration
+  end
+
+  def support
+  end
+
+  def event_organization
   end
 
   def actual_view_name

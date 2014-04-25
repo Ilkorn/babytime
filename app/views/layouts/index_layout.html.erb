@@ -87,24 +87,24 @@
           <!--feature icon-->
           <div id="featurettes">
             <div>
-                <a href="http://darasgarden.com/weddings/" style="position: relative;">
+                <%= link_to page_event_organization_path, :style => 'position: relative;' do %>
                   <%= image_tag 'picture_frame_clean.png', :id => 'org_frame', :class => 'image_over' %>
                   <%= image_tag 'organization_bw.jpg', :id => 'org', :mouseover => 'organization.jpg' %>
-                </a>
+                <% end %>
               <%= yield :subLiner1 %>
             </div>
             <div style="margin-left: 4px;">
-              <a href="http://darasgarden.com/weddings/" style="position: relative;">
+              <%= link_to page_support_path, :style => 'position: relative;' do %>
                 <%= image_tag 'picture_frame_clean.png', :id => 'del_frame', :class => 'image_over'%>
                 <%= image_tag 'delivery_bw.jpg', :id => 'del', :mouseover => 'delivery.jpg' %>
-              </a>
+              <% end %>
               <%= yield :subLiner2 %>
             </div>
             <div style="margin-left: 4px;">
-              <a href="http://darasgarden.com/weddings/" style="position: relative;">
+              <%= link_to page_immigration_path, :style => 'position: relative;' do %>
                 <%= image_tag 'picture_frame_clean.png', :id => 'immi_frame', :class => 'image_over' %>
                 <%= image_tag 'immigration_bw.jpg', :id => 'immi', :mouseover => 'immigration.jpg' %>
-              </a>
+                <% end %>
               <%= yield :subLiner3 %>
             </div>
           </div>

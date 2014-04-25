@@ -6,6 +6,9 @@ Babytime::Application.routes.draw do
   get "page/price"
   get "page/photo_gallery"
   get "page/contact_us"
+  get "page/immigration"
+  get "page/support"
+  get "page/event_organization"
 
   root :to => "page#index"
   # The priority is based upon order of creation:
