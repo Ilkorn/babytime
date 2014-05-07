@@ -50,7 +50,7 @@ html>body { font-size: 10px; }
 
 #footer { background: url(div.gif) no-repeat; margin: 0 20px; padding: 30px 0; }
 #footer .logo { float: left; margin: 0 59px 0 24px; }
-#footer p { color: #663; font: 1.1em/1.8 'Oranienbaum', serif, text-align: right}
+#footer p { color: #663; font: 1.1em/1.8 'Oranienbaum', serif; text-align: right}
 #footer p a { color: #663; margin: 0 5px; }
 #footer p .main { margin-left: 0; }
 #footer p a:hover { color: #000; }

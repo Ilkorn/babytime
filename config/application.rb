@@ -52,6 +52,7 @@ module Babytime
 
     # Enable the asset pipeline
     config.assets.enabled = true
+    config.assets.precompile += %w{page.css _reset.css owl.theme.css owl.carousel.css owl.transitions.css owl.carousel.min.js}
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
