@@ -33,16 +33,34 @@
               $( "#org_frame" ).on( "mouseout", function() {
                   $("#org").trigger( "mouseout" );
               });
+              $( "#org_text" ).on( "mouseover", function() {
+                  $("#org").trigger( "mouseover" );
+              });
+              $( "#org_text" ).on( "mouseout", function() {
+                  $("#org").trigger( "mouseout" );
+              });
               $( "#del_frame" ).on( "mouseover", function() {
                   $("#del").trigger( "mouseover" );
               });
               $( "#del_frame" ).on( "mouseout", function() {
                   $("#del").trigger( "mouseout" );
               });
+              $( "#del_text" ).on( "mouseover", function() {
+                  $("#del").trigger( "mouseover" );
+              });
+              $( "#del_text" ).on( "mouseout", function() {
+                  $("#del").trigger( "mouseout" );
+              });
               $( "#immi_frame" ).on( "mouseover", function() {
                   $("#immi").trigger( "mouseover" );
               });
               $( "#immi_frame" ).on( "mouseout", function() {
+                  $("#immi").trigger( "mouseout" );
+              });
+              $( "#immi_text" ).on( "mouseover", function() {
+                  $("#immi").trigger( "mouseover" );
+              });
+              $( "#immi_text" ).on( "mouseout", function() {
                   $("#immi").trigger( "mouseout" );
               });
 
@@ -91,7 +109,7 @@
                 <%= image_tag 'picture_frame_clean.png', :id => 'org_frame', :class => 'image_over' %>
                 <%= image_tag 'organization_bw.jpg', :id => 'org', :mouseover => 'organization.jpg' %>
               <% end %>
-              <%= link_to page_event_organization_path do %>
+              <%= link_to page_event_organization_path, :id => 'org_text' do %>
                 <%= yield :subLiner1 %>
               <% end %>
             </div>
@@ -100,7 +118,7 @@
                 <%= image_tag 'picture_frame_clean.png', :id => 'del_frame', :class => 'image_over'%>
                 <%= image_tag 'delivery_bw.jpg', :id => 'del', :mouseover => 'delivery.jpg' %>
             <% end %>
-            <%= link_to page_support_path do %>
+            <%= link_to page_support_path, :id => 'del_text' do %>
               <%= yield :subLiner2 %>
             <% end %>
             </div>
@@ -109,7 +127,7 @@
                 <%= image_tag 'picture_frame_clean.png', :id => 'immi_frame', :class => 'image_over' %>
                 <%= image_tag 'immigration_bw.jpg', :id => 'immi', :mouseover => 'immigration.jpg' %>
               <% end %>
-              <%= link_to page_immigration_path do %>
+              <%= link_to page_immigration_path, :id => 'immi_text' do %>
                 <%= yield :subLiner3 %>
               <% end %>
             </div>
