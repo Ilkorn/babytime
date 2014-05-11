@@ -24,7 +24,7 @@ class OrganizeController < ApplicationController
   def translation_service
   end
 
-  def tranfser
+  def transfer
   end
 
   def photographer

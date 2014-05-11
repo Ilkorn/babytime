@@ -1,50 +1,28 @@
 Babytime::Application.routes.draw do
   get "support/index"
-
   get "support/babysitter_service"
-
   get "support/borning_help"
-
   get "support/kid_doctor_appointment"
-
   get "support/doctor_appointment"
-
   get "support/hospital"
-
   get "support/paperwork"
-
   get "support/parent_cure"
-
   get "support/child_baptized"
-
   get "support/doctor_selection"
 
   get "organize/index"
-
   get "organize/actual_help"
-
   get "organize/kid_garden"
-
   get "organize/parent_courses"
-
   get "organize/english_courses"
-
   get "organize/transport_rent"
-
   get "organize/ticket_reservation"
-
   get "organize/translation_service"
-
-  get "organize/tranfser"
-
+  get "organize/transfer"
   get "organize/photographer"
-
   get "organize/problem_resolve"
-
   get "organize/women_service"
-
   get "organize/shopping"
-
   get "organize/excursion"
 
   get "immigration/index"
