@@ -20,9 +20,6 @@ class PageController < ApplicationController
   end
 
   def contact_us
-    end
-
-  def immigration
   end
 
   def support

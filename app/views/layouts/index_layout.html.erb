@@ -125,11 +125,11 @@
             <% end %>
             </div>
             <div style="margin-left: 4px;">
-              <%= link_to page_immigration_path, :style => 'position: relative;' do %>
+              <%= link_to immigration_index_path, :style => 'position: relative;' do %>
                 <%= image_tag 'picture_frame_clean.png', :id => 'immi_frame', :class => 'image_over' %>
                 <%= image_tag 'immigration_bw.jpg', :id => 'immi', :mouseover => 'immigration.jpg' %>
               <% end %>
-              <%= link_to page_immigration_path, :id => 'immi_text' do %>
+              <%= link_to immigration_index_path, :id => 'immi_text' do %>
                 <%= yield :subLiner3 %>
               <% end %>
             </div>

@@ -1,4 +1,11 @@
 Babytime::Application.routes.draw do
+  get "immigration/index"
+  get "immigration/bussines_and_work"
+  get "immigration/lawyer_consulting"
+  get "immigration/immigration_service"
+  get "immigration/immigration"
+  get "immigration/change_usa_status"
+
   get "page/index"
   get "page/about_us"
   get "page/service"
@@ -6,9 +13,6 @@ Babytime::Application.routes.draw do
   get "page/price"
   get "page/photo_gallery"
   get "page/contact_us"
-  get "page/immigration"
-  get "page/support"
-  get "page/event_organization"
 
   root :to => "page#index"
   # The priority is based upon order of creation:
