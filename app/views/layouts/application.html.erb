@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <meta name="google-translate-customization" content="936f24a52ae83dee-44616ef718b701a2-g6edf50ceb18b5de3-e">
+
       <title>Babytime</title>
       <link rel="shortcut icon" href="http://darasgarden.com/favicon.ico" type="image/x-icon">
       <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      <%= javascript_include_tag "application" %>
+
       <link href='http://fonts.googleapis.com/css?family=Oranienbaum&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
       <%= stylesheet_link_tag    "page", :media => "all" %>
       <%= stylesheet_link_tag    "owl.theme", :media => "all" %>
       <%= stylesheet_link_tag    "owl.carousel", :media => "all" %>
       <%= stylesheet_link_tag    "owl.transitions", :media => "all" %>
-      <%= javascript_include_tag "application" %>
+
       <%= csrf_meta_tags %>
+
+      <script>
+          function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'ru', includedLanguages: 'ru,en,de,es,fr,it,pt,yi,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+          }
+      </script>
+
     </head>
 
     <body class="common_body">
@@ -21,12 +33,8 @@
           <%= render 'shared/toolbar' %>
 
           <!--menu-->
-            <div id="header" class="handwritten" style="width: 760px;">
-              <% if session[:locale] == 'ru'%>
-                  <%= render 'shared/menu_ru' %>
-              <% else %>
-                  <%= render 'shared/menu' %>
-              <% end %>
+            <div id="header" class="handwritten" style="width: 760px; padding-top: 50px">
+              <%= render 'shared/menu' %>
             </div>
 
           <!--content-->
@@ -37,11 +45,7 @@
           </div>
 
           <!--side bar-->
-          <% if session[:locale] == 'ru'%>
-              <%= render 'shared/side_form_ru' %>
-          <% else %>
-              <%= render 'shared/side_form' %>
-          <% end %>
+          <%= render 'shared/side_form' %>
 
           <!--footer-->
           <%= render 'shared/footer' %>

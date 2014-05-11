@@ -1,37 +1,38 @@
 <div id="visit">
-  <h1 class="underlined font-large">Plan your <em class="handwritten" style="font-size: 30px;">visit...</em></h1>
-  <p>Tell us the details of your event, and we will contact you to set up a time for you to visit our property.</p>
+  <h1 class="underlined font-large" >Спланируйте свой <em class="handwritten" style="font-size: 30px;">визит...</em></h1>
+  <p>Сообщите нам детали о себе и наш специалист свяжется с Вами, проконсультирует по всем возникшим вопросам
+    и организует Вашу поездку. Вам останется лишь наслаждаться прекрасными моментами жизни.</p>
   <a name="visitform" id="visitform"></a>
   <form action="" method="post">
-    <label for="name">Name</label>
+    <label for="name">Имя</label>
     <input name="name" type="text" id="name" class="input" value=""><br>
-    <label for="email">Email</label>
+    <label for="email">Электронная почта</label>
     <input name="email" type="text" id="email" class="input" value=""><br>
-    <label for="phone">Phone number</label>
+    <label for="phone">Номер телефона</label>
     <input name="phone" type="text" id="phone" class="input" value=""><br>
     <select name="type" class="select">
-      <option value="0">Event type</option>
-      <option value="Organizational services">Organizational services</option>
-      <option value="Delivery support">Delivery support</option>
-      <option value="Investment and immigration services">Investment and immigration services</option>
+      <option value="0">Выбор желаемых услуг</option>
+      <option value="Организационные услуги">Организационные услуги</option>
+      <option value="Сопровождение беременности и родов">Сопровождение беременности и родов</option>
+      <option value="Иммиграционные и ивестиционные услуги">Иммиграционные и инвестиционные услуги</option>
     </select><br>
     <select name="month" class="select small">
-      <option value="0">Month</option>
-      <option value="Jan">Jan</option>
-      <option value="Feb">Feb</option>
-      <option value="Mar">Mar</option>
-      <option value="Apr">Apr</option>
-      <option value="May">May</option>
-      <option value="Jun">Jun</option>
-      <option value="Jul">Jul</option>
-      <option value="Aug">Aug</option>
-      <option value="Sep">Sep</option>
-      <option value="Oct">Oct</option>
-      <option value="Nov">Nov</option>
-      <option value="Dec">Dec</option>
+      <option value="0">Месяц</option>
+      <option value="Jan">Январь</option>
+      <option value="Feb">Февраль</option>
+      <option value="Mar">Март</option>
+      <option value="Apr">Апрель</option>
+      <option value="May">Май</option>
+      <option value="Jun">Июнь</option>
+      <option value="Jul">Июль</option>
+      <option value="Aug">Август</option>
+      <option value="Sep">Сентябрь</option>
+      <option value="Oct">Октябрь</option>
+      <option value="Nov">Ноябрь</option>
+      <option value="Dec">Декабрь</option>
     </select>
     <select name="day" class="select small">
-      <option value="0">Day</option>
+      <option value="0">День</option>
       <option value="01">01</option>
       <option value="02">02</option>
       <option value="03">03</option>
@@ -65,16 +66,16 @@
       <option value="31">31</option>
     </select><br>
     <select name="guests" class="select">
-      <option value="0">People count</option>
+      <option value="0">Количество людей</option>
       <option value="1">1</option>
       <option value="2">2</option>
       <option value="3">3</option>
       <option value="4">4</option>
       <option value="5">5</option>
     </select><br>
-    <label>Details of your event</label>
+    <label>Детали</label>
     <textarea name="details" cols="10" rows="5" class="textarea"></textarea><br>
-    <input name="submit" type="image" class="submit" value="submit" src="<%= image_path 'submit.gif' %>" alt="submit">
+    <input name="submit" type="image" class="submit" value="Отправить" src="<%= image_path 'submit.gif' %>" alt="submit">
   </form>
 
   <div id="fb-root"></div>
@@ -94,7 +95,8 @@
   <div style="margin-left: 40px; margin-top: 30px">
     <iframe src="http://free.timeanddate.com/clock/i44cxonz/n156/szw110/szh110/cf100/hnce1ead6" frameborder="0" width="120" height="120"></iframe>
   </div>
-  <div style="width: 100%; margin-left: 30%;">
-    Time in Miami
+  <div style="width: 100%; margin-left: 26%;">
+    Время в Маями
   </div>
+
 </div>

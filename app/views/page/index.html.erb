@@ -1,62 +1,81 @@
 <% content_for :mainLiner do %>
-    Life should be <span class="handwritten" style="color: white; font-size: 1.2em">better, richer and fuller</span> for anyone, regardless of social class or circumstances of birth.
+    У каждого человека жизнь должна быть
+    <span class="handwritten" style="color: white; font-size: 1.2em">лучше, интереснее и насыщеннее,</span>
+    независимо от социального класса, обстоятельств и места рождения.
 <% end %>
 <% content_for :subLiner1 do %>
-    <div class="liner handwritten font-small" style="text-align: center; padding-top: 5px;">
-      Organizational services
+    <div class="liner handwritten font-small" style="text-align: center; padding-top: 5px; font-size: 18px;">
+      Организационные услуги
     </div>
 <% end %>
 <% content_for :subLiner2 do %>
-    <div class="liner handwritten font-small" style="text-align: center; padding-top: 5px;">
-      Delivery support
+    <div class="liner handwritten font-small" style="text-align: center; padding-top: 5px; line-height: 85%; font-size: 18px;">
+      Сопровождение беременности и родов
     </div>
 <% end %>
 <% content_for :subLiner3 do %>
-    <div class="liner handwritten font-small" style="text-align: center; padding-top: 5px; line-height: 85%;">
-      Investment and immigration services
+    <div class="liner handwritten font-small" style="text-align: center; padding-top: 5px; line-height: 85%; font-size: 18px;">
+      Иммиграционные и инвестиционные услуги
     </div>
 <% end %>
-
 <div>
-    <h1 class="underlined font-large">Let us help you to begin a new <em class="handwritten" >life...</em></h1>
-    <p>
-      <span style="font-size: 1.7em;">Dara’s Garden offers serenity after months of planning, so you can relax</span>
-      and enjoy these moments. Every detail of your
-      <a href="http://darasgarden.com/weddings/">wedding</a>
-      or <a href="http://darasgarden.com/events/">special event</a> is planned to perfection, so your event sets the
-      standard for all others to come.
-    </p>
-
-    <h3>Celebrate your special day in one of our gardens.</h3>
-    <ul style="width: 140px;">
-      <li>Weddings</li>
-      <li>Receptions</li>
-      <li>Rehearsal dinners</li>
-      <li>Dinner parties</li>
-      <li>Cocktail parties</li>
+  <h1 class="underlined font-large">Позвольте помочь вам начать новую <em class="handwritten" style="font-size: 30px;">жизнь...</em></h1>
+  <p style="text-align: justify;">
+    При разработке концепции нашего сервиса мы исходили из того, что нашим клиентам гораздо проще
+    иметь решение всех своих задач и вопросов в одном месте. Поэтому мы оказываем <span style="font-size: 1.5em;">организационную,
+      медицинскую, иммиграционную и юридическую</span> поддержку, а также комплексно подходим к решению
+    проблем на любом этапе Вашей и поездки во Флориду. Посетите раздел <%= link_to 'О нас', page_about_us_path %>,
+    чтобы больше узнать о нашей компании.
+  </p>
+                  
+  <div class="tree-colomn">                                   
+    <h3>Обратившись в нашу компанию, Вы получите следующий комплекс услуг:</h3>
+    <ul>
+      <li>Визовую поддержку</li>
+      <li>Страхование</li>
+      <li>Услуги по бронированию билетов</li>
+      <li>Услуги по аренде жилья</li>
+      <li>Услуги по аренде авто</li>
     </ul>
-    <ul style="width: 140px;">
-      <li>Holiday parties</li>
-      <li>Seminars</li>
-      <li>Business meetings</li>
-      <li>Galas</li>
-      <li>School picnics</li>
+    <ul>
+      <li>Трансфер и сопровождение</li>
+      <li>Сопровождение беременности и родов</li>
+      <li>Подбор госпиталя</li>
+      <li>Подбор врачей</li>
+      <li>Оформление документов</li>
     </ul>
-    <ul style="width: 140px;">
-      <li>Anniversary parties</li>
-      <li>Showers</li>
-      <li>Church socials</li>
-      <li>Tour groups</li>
-      <li>Social gatherings</li>
+    <ul>
+      <li>Сопутствующие услуги</li>
+      <li>Иммиграционную поддержку</li>
+      <li>Юридическую поддержку</li>
+      <li>Услуги по развитию бизнеса</li>
+      <li>Инвестиционные услуги</li>
     </ul>
+  </div>
+  <div class="clear"></div>
+  <h3>Нас рекомендуют</h3>
+  <p style="text-align: justify;">
+    Мы - ведущая бизнес-группа компаний, специализирующаяся на реализации инициатив, которые направлены не
+    только на  организацию и сопровождению родов в США, но и на предоставлении юридических и иммиграционных услуг,
+    осуществление инвестиционных проектов и обеспечение устойчивого развития различных бизнесов. В бизнес-группу
+    входят компании <%= link_to 'US BABY TIME', 'http://usbabytime.com' %>, <%= link_to 'Credit Services of America', 'http://www.creditservicesamerica.com' %>,
+    <%= link_to 'American EB-5 Centers', 'http://americaneb5centers.com' %>, <%= link_to 'Data Business Systems', 'http://google.com' %>
+    и многие другие.<br>
+    Мы хотим узнать Ваше мнение о нашей работе и узнать больше о Вашем личном опыте в США.
+    <!--скопировать о нас из Usbabytime-->
+    Посетите раздел <%= link_to 'Отзывы', 'http://google.com' %> чтобы оставить комментарии и узнать, что о нас пишут.
+    С авторами отзывов Вы можете пообщаться на форуме <%= link_to 'Facebook', 'https://www.facebook.com/groups/450956344973158/' %>.
+  </p>
 
-    <div class="clear left">
-      <h3>Share <em>your</em> story.</h3>
-      <p>We would love to hear about the succcess of your event or wedding. <a href="http://darasgarden.com/contact/">Contact us</a> with your memories and photos, or visit <a href="http://darasgarden.com/testimonials/">our testimonials</a> page to read about our events.</p>
-    </div><!--left-->
-
-    <div class="right">
-      <h3>At your service.</h3>
-      <p>Our staff has unmatched experience. We are exclusively catered by <a href="http://www.rothchildcatering.com/">Rothchild Catering</a> who has the knowledge and expertise to handle the most detailed meal requests.</p>
-    </div><!--right-->
+  <h3>К Вашим услугам 24/7</h3>
+  <p style="text-align: justify;">
+    В нашей команде работают только квалифицированные специалисты различного профиля
+    (доктора, переводчики, юристы, финансовые консультанты, риэлторы, фотографы,
+    гиды и другие), свободно владеющие несколькими языками.
+    Посетите раздел <%= link_to 'Почему мы', page_why_choose_us_path %> чтобы получить
+    больше информации о наших сотрудниках. Мы сотрудничаем с крупнейшими мировыми агенствами
+    делового туризма <%= link_to nil, 'http://continent.ru' %>, <%= link_to nil, 'http://cbtc.ru' %>
+    и агенствами полного цикла профессиональных операций в области корпоративных мероприятий,
+    бизнес трэвел <%= link_to nil, 'http://maximice.ru' %> и другими.
+  </p>
 </div>

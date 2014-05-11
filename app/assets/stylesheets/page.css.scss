@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 html {
   body {
     font-size: 10px;
+    top: -50px !important;
   }
 }
 
@@ -70,6 +71,40 @@ html {
       color: $color-app-red;
     }
   }
+}
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+#google_translate_element {
+  width: 100px;
+  display: inline-block;
+
+  div {
+    height: 100%;
+  }
+
+  .goog-te-gadget {
+    width: 100px;
+
+    .goog-te-gadget-simple {
+      width: 100px;
+      height: 20px;
+      font-size: 12px;
+    }
+  }
+
+  a {
+    span {
+      font-size: 12px;
+    }
+  }
+
+  img {
+    display: none;
+  }
+
 }
 
 #footer {
