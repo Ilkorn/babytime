@@ -107,20 +107,20 @@
           <!--feature icon-->
           <div id="featurettes">
             <div>
-              <%= link_to page_event_organization_path, :style => 'position: relative;' do %>
+              <%= link_to organize_index_path, :style => 'position: relative;' do %>
                 <%= image_tag 'picture_frame_clean.png', :id => 'org_frame', :class => 'image_over' %>
                 <%= image_tag 'organization_bw.jpg', :id => 'org', :mouseover => 'organization.jpg' %>
               <% end %>
-              <%= link_to page_event_organization_path, :id => 'org_text' do %>
+              <%= link_to organize_index_path, :id => 'org_text' do %>
                 <%= yield :subLiner1 %>
               <% end %>
             </div>
             <div style="margin-left: 4px;">
-              <%= link_to page_support_path, :style => 'position: relative;' do %>
+              <%= link_to support_index_path, :style => 'position: relative;' do %>
                 <%= image_tag 'picture_frame_clean.png', :id => 'del_frame', :class => 'image_over'%>
                 <%= image_tag 'delivery_bw.jpg', :id => 'del', :mouseover => 'delivery.jpg' %>
             <% end %>
-            <%= link_to page_support_path, :id => 'del_text' do %>
+            <%= link_to support_index_path, :id => 'del_text' do %>
               <%= yield :subLiner2 %>
             <% end %>
             </div>

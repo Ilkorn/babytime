@@ -22,10 +22,4 @@ class PageController < ApplicationController
   def contact_us
   end
 
-  def support
-  end
-
-  def event_organization
-  end
-
 end
