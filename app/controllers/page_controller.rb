@@ -22,4 +22,7 @@ class PageController < ApplicationController
   def contact_us
   end
 
+  def feedback
+  end
+
 end
