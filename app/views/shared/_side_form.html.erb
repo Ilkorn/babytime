@@ -1,3 +1,8 @@
+<script>
+  var clickSubmit = function() {
+      $('#visitform').submit();
+  }
+</script>
 <div id="visit">
   <h1 class="underlined font-large" >Спланируйте свой <em class="handwritten" style="font-size: 30px;">визит...</em></h1>
   <p>Сообщите нам детали о себе и наш специалист свяжется с Вами, проконсультирует по всем возникшим вопросам
@@ -80,7 +85,7 @@
     </select><br>
     <label>Детали</label>
     <textarea name="details" cols="10" rows="5" class="textarea"></textarea><br>
-    <input name="submit" type="image" class="submit" value="Отправить" src="<%= image_path 'submit.gif' %>" alt="submit">
+    <div class="submit_blue" style="height: 12px; width: 56px;" onclick="clickSubmit()">Отправить</div>
   </form>
 
   <div id="fb-root"></div>
