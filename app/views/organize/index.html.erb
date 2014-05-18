@@ -1,5 +1,5 @@
 <div style="text-align: justify">
-  <h1 class="underlined handwritten" style="font-size: 30px;">Организационные услуги</h1>
+  <h1 class="underlined font-large">Организационные <em class="handwritten" style="font-size: 30px;">услуги</em></h1>
 
   <p> <span style="font-size: 1.5em;">Если Вы мечтаете о новом этапе жизни вдали от суеты и повседневности, то Ваши
     мечты сбудутся в солнечной Флориде.</span>
@@ -9,15 +9,15 @@
     TIME. Посетите раздел <%= link_to 'О нас', page_about_us_path %>, чтобы больше узнать о нашей компании
   </p>
 
-  <h3>
-    Мы предлагаем Вам следующие услуги, и если Вас интересует какой-либо другой вопрос – вы всегда можете
-    <%= link_to('обратиться к нам', page_contact_us_path) %> 24/7:
-  </h3>
+  <p>
+    <span style="font-size: 1.5em;">Мы предлагаем Вам следующие услуги, и если Вас интересует какой-либо другой вопрос –
+    Вы всегда можете <%= link_to('обратиться к нам', page_contact_us_path) %> 24/7:</span>
+  </p>
 
   <ul style="text-align: left">
     <li><%= link_to 'Квалифицированная помощь при оформлении американской визы, страховании, бронировании билетов', organize_actual_help_path %></li>
     <li><%= link_to 'Решение вопросов по подбору, аренде и покупке жилья и послеарендное/продажное сопровождение', organize_problem_resolve_path %></li>
-    <li><%= link_to 'Помощь в аренде на выгодных условиях транспортного средства', organize_transport_rent_path %></li>
+    <li><%= link_to 'Помощь в аренде транспортного средства на выгодных условиях', organize_transport_rent_path %></li>
     <li><%= link_to 'Предоставление транспортных услуг', organize_transfer_path %></li>
   </ul>
 

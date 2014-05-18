@@ -85,7 +85,7 @@
     </select><br>
     <label>Детали</label>
     <textarea name="details" cols="10" rows="5" class="textarea"></textarea><br>
-    <div class="submit_blue" style="height: 12px; width: 56px;" onclick="clickSubmit()">Отправить</div>
+    <div class="submit_blue" style="height: 12px; width: 56px; margin-top: 5px;" onclick="clickSubmit()">Отправить</div>
   </form>
 
   <!--
@@ -105,15 +105,20 @@
   -->
   <div>
     <p class="small_title">Поддержите благотворительные организации наших партнеров:</p>
-    <div><%= image_tag 'partner_logo_1.jpg', :alt => '' %></div>
-    <div><%= image_tag 'partner_logo_2.jpg', :alt => '' %></div>
+    <%= link_to 'http://www.cjfoundation.net' do %>
+        <div><%= image_tag 'partner_logo_1.jpg', :alt => '' %></div>
+    <% end %>
+    <%= link_to 'http://jdchfoundation.org' do %>
+        <div><%= image_tag 'partner_logo_2.jpg', :alt => '' %></div>
+    <% end %>
   </div>
 
+  <div style="width: 100%; margin-left: 18%;">
+    Время в Майами, США
+  </div>
   <div style="margin-left: 40px; margin-top: 15px">
     <iframe src="http://free.timeanddate.com/clock/i44cxonz/n156/szw110/szh110/cf100/hnce1ead6" frameborder="0" width="120" height="120"></iframe>
   </div>
-  <div style="width: 100%; margin-left: 26%;">
-    Время в Майами
-  </div>
+
 
 </div>
