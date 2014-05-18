@@ -42,6 +42,9 @@ class OrganizeController < ApplicationController
   def women_service
   end
 
+  def women_service_list
+  end
+
   def shopping
   end
 
