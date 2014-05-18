@@ -9,6 +9,9 @@ class OrganizeController < ApplicationController
   def kid_garden
   end
 
+  def kid_garden_list
+  end
+
   def parent_courses
   end
 

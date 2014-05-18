@@ -13,6 +13,7 @@ Babytime::Application.routes.draw do
   get "organize/index"
   get "organize/actual_help"
   get "organize/kid_garden"
+  get "organize/kid_garden_list"
   get "organize/parent_courses"
   get "organize/english_courses"
   get "organize/english_courses_list"
