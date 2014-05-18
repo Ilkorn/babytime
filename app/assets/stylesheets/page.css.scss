@@ -285,6 +285,16 @@ ul#nav {
       padding-left: 8px;
     }
 
+    a {
+      color: $color-app-green;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-app-green;
+        text-decoration: underline;
+      }
+    }
+
   }
 
   ol {
