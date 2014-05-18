@@ -24,6 +24,7 @@ Babytime::Application.routes.draw do
   get "organize/women_service"
   get "organize/shopping"
   get "organize/excursion"
+  get "organize/excursion_list"
 
   get "immigration/index"
   get "immigration/bussines_and_work"

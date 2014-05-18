@@ -41,4 +41,7 @@ class OrganizeController < ApplicationController
 
   def excursion
   end
+
+  def excursion_list
+  end
 end
