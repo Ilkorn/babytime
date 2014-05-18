@@ -45,6 +45,12 @@ class OrganizeController < ApplicationController
   def shopping
   end
 
+  def shopping_mall_list
+  end
+
+  def shopping_kid_magazine_list
+  end
+
   def excursion
   end
 
