@@ -15,6 +15,9 @@ class OrganizeController < ApplicationController
   def english_courses
   end
 
+  def english_courses_list
+  end
+
   def transport_rent
   end
 
