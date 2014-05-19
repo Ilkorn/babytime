@@ -256,7 +256,6 @@ ul#nav {
   }
   h3, p span {
     color: #366;
-    font-family: $font-original-title;
     font: 2em serif;
   }
   h3 a {
@@ -365,7 +364,6 @@ ul#nav {
   .small_title {
     margin-top: 20px;
     color: #366;
-    font-family: $font-original-title;
     text-decoration: underline;
     font: 14px serif;
   }
@@ -498,4 +496,28 @@ a {
 .right {
   display: inline;
   float: right;
+}
+
+.feedback {
+  width: 100%;
+
+  img {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .smile {
+    height: 16px;
+    width: 16px;
+    margin: 0;
+  }
+
+  .title {
+
+  }
+
+  .content {
+
+  }
 }
