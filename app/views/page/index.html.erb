@@ -31,25 +31,25 @@
   <div class="tree-colomn">                                   
     <h3>Обратившись в нашу компанию, Вы получите следующий комплекс услуг:</h3>
     <ul>
-      <li>Визовую поддержку</li>
-      <li>Страхование</li>
-      <li>Услуги по бронированию билетов</li>
-      <li>Услуги по аренде жилья</li>
-      <li>Услуги по аренде авто</li>
+      <li><%= link_to 'Визовую поддержку', immigration_immigration_path %></li>
+      <li><%= link_to 'Страхование', page_service_path %></li>
+      <li><%= link_to 'Услуги по бронированию билетов', organize_ticket_reservation_path %></li>
+      <li><%= link_to 'Услуги по аренде жилья', organize_problem_resolve_path %></li>
+      <li><%= link_to 'Услуги по аренде авто', organize_transport_rent_path %> </li>
     </ul>
     <ul>
-      <li>Трансфер и сопровождение</li>
-      <li>Сопровождение беременности и родов</li>
-      <li>Подбор госпиталя</li>
-      <li>Подбор врачей</li>
-      <li>Оформление документов</li>
+      <li><%= link_to 'Трансфер и сопровождение', organize_transfer_path %></li>
+      <li><%= link_to 'Сопровождение беременности и родов', support_index_path %></li>
+      <li><%= link_to 'Подбор госпиталя', support_hospital_path %></li>
+      <li><%= link_to 'Подбор врачей', support_doctor_selection_path %></li>
+      <li><%= link_to 'Оформление документов', support_paperwork_path %></li>
     </ul>
     <ul>
-      <li>Сопутствующие услуги</li>
-      <li>Иммиграционную поддержку</li>
-      <li>Юридическую поддержку</li>
-      <li>Услуги по развитию бизнеса</li>
-      <li>Инвестиционные услуги</li>
+      <li><%= link_to 'Сопутствующие услуги', support_index_path %></li>
+      <li><%= link_to 'Иммиграционную поддержку', immigration_index_path %></li>
+      <li><%= link_to 'Юридическую поддержку', immigration_lawyer_consulting_path %></li>
+      <li><%= link_to 'Услуги по развитию бизнеса', immigration_bussines_and_work_path %></li>
+      <li><%= link_to 'Инвестиционные услуги', immigration_immigration_service_path %></li>
     </ul>
   </div>
   <div class="clear"></div>
