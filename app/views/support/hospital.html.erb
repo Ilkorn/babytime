@@ -1,4 +1,4 @@
-<div style="text-align: justify;">
+<div class="hospital">
   <h1 class="underlined">Подбор госпиталя (ознакомительные туры по госпиталю, оформление необходимых документов между
     Заказчиком и госпиталем)</h1>
 
@@ -29,20 +29,28 @@
   </p>
 
   <p>
-    Наши рекомендации: госпитали в Майами (Необходимо раздел заполнить как раздел Госпитали на сайте usbabytime.com с
-    фотографиями и текстом!!)
-    Memorial Regional Hospital (clickable link) При нажатии на каждую ссылку должно быть тоже самое, что на сайте
-    usbabytime.com в разделе госитали)
+    Наши рекомендации:
+    <%= link_to support_hospital_1_path do %>
+      <p>Broward General Medical Center</p>
+      <%= image_tag 'hospital_1.jpg' %>
+    <% end %>
   </p>
 
+  <br/>
   <p>
-    http://usbabytime.com/?page_id=711 (clickable link) далее все как на сайте usbabytime.com
-    Broward General Medical Center (clickable link)
+    <%= link_to support_hospital_2_path do %>
+      <p>Memorial Regional Hospital</p>
+      <%= image_tag 'hospital_2.jpg' %>
+  <% end %>
   </p>
 
+
   <p>
-    http://usbabytime.com/?page_id=712
-    Mount Sinai Medical Center (clickable link) далее все как на сайте usbabytime.com
+    Наши рекомендации:
+    <%= link_to support_hospital_3_path do %>
+      <p>Mount Sinai Medical Center</p>
+      <%= image_tag 'hospital_3.jpg' %>
+  <% end %>
   </p>
 
   <p>
