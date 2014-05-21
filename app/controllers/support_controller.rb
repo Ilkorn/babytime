@@ -26,7 +26,13 @@ class SupportController < ApplicationController
   def hospital_3
   end
 
+  def hospital_list
+  end
+
   def paperwork
+  end
+
+  def paperwork_list
   end
 
   def parent_cure

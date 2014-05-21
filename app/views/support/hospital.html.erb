@@ -1,12 +1,11 @@
 <div class="hospital">
-  <h1 class="underlined">Подбор госпиталя (ознакомительные туры по госпиталю, оформление необходимых документов между
-    Заказчиком и госпиталем)</h1>
+  <h1 class="underlined font-large">Подбор <em class="handwritten" style="font-size: 30px;">госпиталя</em></h1>
 
   <p>
-    <i>
-      Высококвалифицированные врачи и новейшие достижения американской медицины - залог успешных родов и здоровья
+    <span style="font-size: 1.5em;">
+    Высококвалифицированные врачи и новейшие достижения американской медицины - залог успешных родов и здоровья
     Вашего будущего ребенка.
-    </i>
+    </span>
   </p>
 
   <p>
@@ -28,34 +27,28 @@
     Флориды. Познакомьтесь с основными из них:
   </p>
 
-  <p>
-    Наши рекомендации:
-    <%= link_to support_hospital_1_path do %>
-      <p>Broward General Medical Center</p>
-      <%= image_tag 'hospital_1.jpg' %>
-    <% end %>
-  </p>
+  <ul>
+    <li>
+      <%= link_to support_hospital_1_path do %>
+        <b>Broward General Medical Center</b>
+        <%= image_tag 'hospital_1.jpg' %>
+      <% end %>
+    </li>
 
-  <br/>
-  <p>
+  <li>
     <%= link_to support_hospital_2_path do %>
-      <p>Memorial Regional Hospital</p>
+        <b>Memorial Regional Hospital</b>
       <%= image_tag 'hospital_2.jpg' %>
   <% end %>
-  </p>
+  </li>
 
-
-  <p>
-    Наши рекомендации:
+  <li>
     <%= link_to support_hospital_3_path do %>
-      <p>Mount Sinai Medical Center</p>
+        <b>Mount Sinai Medical Center</b>
       <%= image_tag 'hospital_3.jpg' %>
   <% end %>
-  </p>
-
-  <p>
-    http://usbabytime.com/?page_id=713 (clickable link) далее все как на сайте usbabytime.com
-  </p>
+  </li>
+  </ul>
 
   <p>Это далеко не полный список госпиталей.</p>
 
