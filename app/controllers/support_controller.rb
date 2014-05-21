@@ -43,4 +43,23 @@ class SupportController < ApplicationController
 
   def doctor_selection
   end
+
+  def doctor_selection_pediatrician
+  end
+
+  def doctor_selection_gynecologist
+  end
+
+  def doctor
+    doc_id = params[:id]
+    view_path = "doctor_#{doc_id}"
+
+    if (lookup_context.find_all('support/' + view_path).any?)
+      render "doctor_#{doc_id}"
+    else
+      render "doctor_1"
+    end
+
+  end
+
 end

@@ -14,6 +14,9 @@ Babytime::Application.routes.draw do
   get "support/parent_cure"
   get "support/child_baptized"
   get "support/doctor_selection"
+  get "support/doctor_selection_pediatrician"
+  get "support/doctor_selection_gynecologist"
+  get "support/doctor/:id" => 'support#doctor'
 
   get "organize/index"
   get "organize/actual_help"
