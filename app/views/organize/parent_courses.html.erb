@@ -1,6 +1,13 @@
 <% content_for :banner do %>
     <%= link_to organize_index_path do %>
-        <%= image_tag 'banner_organization.jpg', :class => 'banner' %>
+        <div style="height: 200px">
+          <%= image_tag 'banner_organization.jpg', :class => 'banner' %>
+          <p class="banner" style="padding-top: 18px; height: 26px;">
+            <i>
+              иногда мечты сбываются,…если очень захотеть
+            </i>
+          </p>
+        </div>
     <% end %>
 <% end %>
 <div style="text-align: justify">

@@ -480,9 +480,26 @@ ul#nav {
   }
 }
 
-.banner {
+img.banner {
   margin-left: 20px;
   width: 720px;
+}
+
+p.banner {
+  margin-left: 20px;
+  width: 708px;
+  font-family: serif;
+  font-size: 16px;
+  text-align: center;
+  padding: 6px;
+  line-height: 85%;
+  position: relative;
+  top: -70px;
+  left: 0px;
+  color: #ffffff;
+  height: 40px;
+  background: rgb(152, 178, 198);
+  background: rgba(152, 178, 198, .8);
 }
 
 .input, .textarea, .select {
