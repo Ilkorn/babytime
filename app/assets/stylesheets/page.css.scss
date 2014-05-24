@@ -291,8 +291,8 @@ ul#nav {
     margin: 0.6em 0 1.2em 0;
 
     li {
-      background: url(dot.gif) no-repeat 0 9px;
-      padding-left: 8px;
+      background: url(dot.gif) no-repeat 0 11px;
+      padding-left: 12px;
     }
 
     a {
@@ -314,7 +314,7 @@ ul#nav {
     padding-left: 20px;
 
     li {
-      padding-left: 8px;
+      padding-left: 12px;
     }
 
   }
@@ -323,6 +323,7 @@ ul#nav {
     li {
       font-size: 1em;
       width: 140px;
+      padding-left: 12px;
     }
     ul {
       width: 140px;
@@ -340,6 +341,7 @@ ul#nav {
     margin: 0.6em 0 1.2em 0;
     li {
       background: no-repeat;
+      padding-left: 12px;
       a {
         color: #933;
         text-decoration: underline;
