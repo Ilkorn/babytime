@@ -1,0 +1,44 @@
+<% content_for :banner do %>
+    <%= link_to support_index_path do %>
+        <div style="height: 200px">
+          <%= image_tag 'banner_support.jpg', :class => 'banner' %>
+          <p class="banner" style="padding-top: 18px; height: 26px;">
+            <i>
+              US BABY TIME - компания для обеспечения высокого качества Вашей жизни во Флориде
+            </i>
+          </p>
+        </div>
+    <% end %>
+<% end %>
+
+<div class='doctor_detail' >
+  <h1 class="underlined" style="text-align: center;">Светлана Масляк</h1>
+  <p style="text-align: center;">
+  <%= link_to 'Отзывы о докторе', 'http://forum.deliveryinusa.com/viewforum.php?f=169' %>
+  <%= link_to 'Прайс-лист на услуги', '/Doctors+hospitals.pdf' %>
+  </p>
+  <p style="text-align: center;"><b>Адрес:</b> 3990 Sheridan St, Hollywood, FL 33021, офис 201</p>
+  <%= image_tag 'doc_3.jpg' %>
+  <p>
+    Светлана Масляк – профессионал своего дела, акушер-гинеколог, доктор медицины, член Американского Совета по вопросам акушерства и гинекологии.
+    <br/>
+  В 1987 году Светлана закончила Ивано-Франковскую Медицинскую Академию. <br/>
+  В 2005 году доктор Масляк окончила Университет медицины и стоматологи в Нью-Джерси со специализацией «Акушерство и гинекология».
+    <br/>
+  В своей практике Светлана Масляк предпочитает естественные роды. <br/>
+  Гинеколог Масляк сотрудничает с крупнейшей сетью лечебных учреждений США, каковым является Memorial и принимает роды в любом из трёх его госпиталей.
+  </p>
+  <p> 
+  Стоимость ведения беременности и родов у доктора Светланы Масляк:
+  <ul>
+  <li>натуральные: 4 500$</li>
+  <li>кесарево сечение: 4 500$</li>
+  </ul>
+  </p>
+  <p> 
+  Светлана Масляк прикреплена к госпиталю:
+  <ul>
+    <li><%= link_to 'Memorial Regional Hospital', support_hospital_2_path %></li>
+  </ul>
+</p>
+</div>
