@@ -1,0 +1,43 @@
+<% content_for :banner do %>
+    <%= link_to support_index_path do %>
+        <div style="height: 200px">
+          <%= image_tag 'banner_support.jpg', :class => 'banner' %>
+          <p class="banner" style="padding-top: 18px; height: 26px;">
+            <i>
+              US BABY TIME - компания для обеспечения высокого качества Вашей жизни во Флориде
+            </i>
+          </p>
+        </div>
+    <% end %>
+<% end %>
+
+<div class='doctor_detail' >
+  <h1 class="underlined" style="text-align: center;">Матар Набил / Matar Nabil</h1>
+  <p style="text-align: center;">
+  <%= link_to 'Отзывы о докторе', 'http://forum.deliveryinusa.com/viewforum.php?f=170' %>
+  <%= link_to 'Прайс-лист на услуги', '/Doctors+hospitals.pdf' %>
+  </p>
+  <p style="text-align: center;"><b>Адрес:</b> 633 Notheast 167str. Suite 1111, North Miami Beach,  Fl, 3316</p>
+  <%= image_tag 'doctor_7_1.jpg' %>
+  <p>
+    Образование: Каирский университет <br/>
+    Доктор Матар Набил практикует более 20 лет. Матар так же сертифицирован Советом по акушерству и гинекологии США. <br/>
+    Доктор Матар специализируется на сложных и высоко рисковых беременностях. <br/>
+    Доктору Набилу 4 года подряд присваиваются различные награды по итогам голосования пациентов. <br/>
+  </p>
+  <p> 
+  Стоимость ведения беременности и родов у доктора Nabil Matar:
+  <ul>
+  <li>натуральные: 2 700$</li>
+  <li>кесарево сечение: 2 700$</li>
+  </ul>
+  </p>
+
+  <p> 
+    Nabil Matar прикреплен к госпиталю:
+  <ul>
+    <li><%= link_to 'Memorial Regional Hospital', support_hospital_2_path %></li>
+    <li>Jackson North Medical Center</li>
+  </ul>
+</p>
+</div>
