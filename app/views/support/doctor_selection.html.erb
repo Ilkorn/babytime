@@ -25,11 +25,19 @@
   <h3>Наши рекомендации:</h3>
 
   <ul>
-    <li><%= link_to 'Гинекологи в Майами', support_doctor_selection_gynecologist_path %></li>
-    <li><%= link_to 'Педиатры в Майами', support_doctor_selection_pediatrician_path %></li>
+    <li>
+      <%= link_to 'Гинекологи в Майами', support_doctor_selection_gynecologist_path %>
+      <div>
+        <%= image_tag 'extra/23_2_1.bmp', :width => 160, :height => 120, :style => 'margin-left: 140px;' %>
+      </div>
+    </li>
+    <li>
+      <%= link_to 'Педиатры в Майами', support_doctor_selection_pediatrician_path %>
+      <div>
+        <%= image_tag 'extra/23_3_1.bmp', :width => 160, :height => 200, :style => 'margin-left: 140px;' %>
+      </div>
+    </li>
   </ul>
-
-  <%= link_to 'Официальный Сертификат от Women to Women OB GYN Care о дружбе и партнерстве с компанией US BABY TIME', asset_path("certificate.pdf") %>
 
   <p>
     Наши педиатрические Партнеры (Pediatric Associates) — одна из самых старых и наиболее уважаемых педиатрических групп
@@ -51,5 +59,8 @@
   </p>
 
   <p>Все новые предложения нами ценятся и принимаются во внимание.</p>
-
+  <div>
+    <%= image_tag 'extra/23_4_1.jpg', :width => 140, :height => 140, :style => 'margin-left: 30px;' %>
+    <%= image_tag 'extra/23_4_2.jpg', :width => 220, :height => 140, :style => 'margin-left: 14px;' %>
+  </div>
 </div>
