@@ -18,7 +18,9 @@
   <%= link_to 'Прайс-лист на услуги', '/Doctors+hospitals.pdf' %>
   </p>
   <p style="text-align: center;"><b>Адрес:</b> 2500 E. Hallandale Beach Blvd #207, Hallandale, Fl, 33009</p>
-  <%= image_tag 'doctor_4_1.jpg' %>
+  <a class="image-popup-vertical-fit" href="<%= asset_path('doctor_4_2.jpg') %>">
+    <%= image_tag 'doctor_4_1.jpg' %>
+  </a>
   <p>
     1972 год – работает в «Mount Sinai Hospital» <br/>
     1975 год – получил сертификат ECFMG <br/>
@@ -47,6 +49,8 @@
   <ul>
     <li><%= link_to 'Broward General Medical Center', support_hospital_1_path %></li>
   </ul>
-  <%= image_tag 'doctor_4_2.jpg' %>
+  <a class="image-popup-vertical-fit" href="<%= asset_path('doctor_4_2.jpg') %>">
+    <%= image_tag 'doctor_4_2.jpg' %>
+  </a>
 </p>
 </div>

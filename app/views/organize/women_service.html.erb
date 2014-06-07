@@ -25,8 +25,12 @@
     женщины и кормящей мамы.</p>
 
   <div>
-    <%= image_tag 'extra/8_1_1.png', :width => 200, :height => 140, :style => 'margin-left: 10px;' %>
-    <%= image_tag 'extra/8_1_2.jpg', :width => 200, :height => 140, :style => 'margin-left: 10px;' %>
+    <a class="image-popup-vertical-fit" href="<%= asset_path('extra/8_1_1.png') %>">
+      <%= image_tag 'extra/8_1_1.png', :width => 200, :height => 140, :style => 'margin-left: 10px;' %>
+    </a>
+    <a class="image-popup-vertical-fit" href="<%= asset_path('extra/8_1_2.jpg') %>">
+      <%= image_tag 'extra/8_1_2.jpg', :width => 200, :height => 140, :style => 'margin-left: 10px;' %>
+    </a>
   </div>
 
   <p>
@@ -40,7 +44,9 @@
     необходимости окажут <%= link_to 'услуги персонального консультанта и переводчика', organize_translation_service_path %></p>
 
   <div>
-    <%= image_tag 'extra/8_2_1.jpg', :width => 350, :height => 160, :style => 'margin-left: 45px;' %>
+    <a class="image-popup-vertical-fit" href="<%= asset_path('extra/8_2_1.jpg') %>">
+      <%= image_tag 'extra/8_2_1.jpg', :width => 350, :height => 160, :style => 'margin-left: 45px;' %>
+    </a>
   </div>
 
   <p> <%= link_to 'Список некоторых салонов красоты Флориды', organize_women_service_list_path %></p>

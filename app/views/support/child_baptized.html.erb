@@ -29,14 +29,22 @@
   </p>
 
   <div>
-    <%= image_tag 'extra/25_1_1.jpg', :width => 110, :height => 110, :style => 'margin-left: 5px;' %>
-    <%= image_tag 'extra/25_1_2.jpg', :width => 150, :height => 110 %>
-    <%= image_tag 'extra/25_1_3.jpg', :width => 150, :height => 110 %>
+    <a class="image-popup-vertical-fit" href="<%= asset_path('extra/25_1_1.jpg') %>">
+      <%= image_tag 'extra/25_1_1.jpg', :width => 110, :height => 110, :style => 'margin-left: 5px;' %>
+    </a>
+    <a class="image-popup-vertical-fit" href="<%= asset_path('extra/25_1_2.jpg') %>">
+      <%= image_tag 'extra/25_1_2.jpg', :width => 150, :height => 110 %>
+    </a>
+    <a class="image-popup-vertical-fit" href="<%= asset_path('extra/25_1_3.jpg') %>">
+      <%= image_tag 'extra/25_1_3.jpg', :width => 150, :height => 110 %>
+    </a>
   </div>
   <p>
     Посетите раздел  <%= link_to 'О нас', page_about_us_path %>, чтобы больше узнать о нашей компании.
   </p>
   <div>
-    <%= image_tag 'extra/25_2_1.jpg', :width => 240, :height => 180, :style => 'margin-left: 90px;' %>
+    <a class="image-popup-vertical-fit" href="<%= asset_path('extra/25_2_1.jpg') %>">
+      <%= image_tag 'extra/25_2_1.jpg', :width => 240, :height => 180, :style => 'margin-left: 90px;' %>
+    </a>
   </div>
 </div>

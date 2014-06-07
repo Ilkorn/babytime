@@ -40,8 +40,12 @@
   </p>
 
   <div>
-    <%= image_tag 'extra/7_1_1.jpg', :width => 220, :height => 140, :style => 'margin-left: 5px;' %>
-    <%= image_tag 'extra/7_1_2.jpg', :width => 200, :height => 140, :style => 'margin-left: 5px;' %>
+    <a class="image-popup-vertical-fit" href="<%= asset_path('extra/7_1_1.jpg') %>">
+      <%= image_tag 'extra/7_1_1.jpg', :width => 220, :height => 140, :style => 'margin-left: 5px;' %>
+    </a>
+    <a class="image-popup-vertical-fit" href="<%= asset_path('extra/7_1_2.jpg') %>">
+      <%= image_tag 'extra/7_1_2.jpg', :width => 200, :height => 140, :style => 'margin-left: 5px;' %>
+    </a>
   </div>
 
   <h3>Услуги со стороны персонального шоппера:</h3>
@@ -56,6 +60,8 @@
   </ul>
 
   <div>
-    <%= image_tag 'extra/7_2_1.jpg', :width => 280, :height => 160, :style => 'margin-left: 75px;' %>
+    <a class="image-popup-vertical-fit" href="<%= asset_path('extra/7_2_1.jpg') %>">
+      <%= image_tag 'extra/7_2_1.jpg', :width => 280, :height => 160, :style => 'margin-left: 75px;' %>
+    </a>
   </div>
 </div>

@@ -24,7 +24,9 @@
     сложно найти выход.
   </p>
   <div>
-    <%= image_tag 'extra/4_1_1.jpg', :width => 280, :height => 110, :style => 'margin-left: 80px;' %>
+    <a class="image-popup-vertical-fit" href="<%= asset_path('extra/4_1_1.jpg') %>">
+      <%= image_tag 'extra/4_1_1.jpg', :width => 280, :height => 110, :style => 'margin-left: 80px;' %>
+    </a>
   </div>
   <p>
     Опытные водители предложат Вам услуги трансфера по городу и окрестностям во время Ваших поездок, включая аэропорты,
@@ -34,7 +36,11 @@
     огромный процент жителей говорит не только на Английском, но и на Испанском языках.
   </p>
   <div>
-    <%= image_tag 'extra/4_2_1.jpg', :width => 140, :height => 120, :style => 'margin-left: 40px;' %>
-    <%= image_tag 'extra/4_2_2.jpg', :width => 190, :height => 120, :style => 'margin-left: 14px;' %>
+    <a class="image-popup-vertical-fit" href="<%= asset_path('extra/4_2_1.jpg') %>">
+      <%= image_tag 'extra/4_2_1.jpg', :width => 140, :height => 120, :style => 'margin-left: 40px;' %>
+    </a>
+    <a class="image-popup-vertical-fit" href="<%= asset_path('extra/4_2_2.jpg') %>">
+      <%= image_tag 'extra/4_2_2.jpg', :width => 190, :height => 120, :style => 'margin-left: 14px;' %>
+    </a>
   </div>
 </div>

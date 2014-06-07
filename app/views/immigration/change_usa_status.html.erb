@@ -22,8 +22,12 @@
   </p>
 
   <div>
-    <%= image_tag 'extra/14_1_1.jpg', :width => 200, :height => 120, :style => 'margin-left: 10px;' %>
-    <%= image_tag 'extra/14_1_2.jpg', :width => 180, :height => 120, :style => 'margin-left: 14px;' %>
+    <a class="image-popup-vertical-fit" href="<%= asset_path('extra/14_1_1.jpg') %>">
+      <%= image_tag 'extra/14_1_1.jpg', :width => 200, :height => 120, :style => 'margin-left: 10px;' %>
+    </a>
+    <a class="image-popup-vertical-fit" href="<%= asset_path('extra/14_1_2.jpg') %>">
+      <%= image_tag 'extra/14_1_2.jpg', :width => 180, :height => 120, :style => 'margin-left: 14px;' %>
+    </a>
   </div>
 
   <p>
@@ -48,7 +52,9 @@
   </p>
 
   <div>
-    <%= image_tag 'extra/14_2_1.jpg', :width => 290, :height => 120, :style => 'margin-left: 70px;' %>
+    <a class="image-popup-vertical-fit" href="<%= asset_path('extra/14_2_1.jpg') %>">
+      <%= image_tag 'extra/14_2_1.jpg', :width => 290, :height => 120, :style => 'margin-left: 70px;' %>
+    </a>
   </div>
 
   <p>

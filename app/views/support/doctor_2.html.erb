@@ -18,7 +18,9 @@
   </p>
   <p style="text-align: center;"><b>Адрес:</b> 3001W Hallandale Beach BLVD., Hallandale, FL 33009</p>
   <div class="photo">
-  <%= image_tag 'doc_2.jpg' %>
+    <a class="image-popup-vertical-fit" href="<%= asset_path('doc_2.jpg') %>">
+      <%= image_tag 'doc_2.jpg' %>
+    </a>
   </div>
   <p>
     Врач высшей категории,<br>
@@ -69,10 +71,18 @@
 
       <p style="text-align: left;">
   После приёма:
-    <%= image_tag 'doctor_2_1.jpg' %>
-    <%= image_tag 'doctor_2_2.jpg' %>
-    <%= image_tag 'doctor_2_3.jpg' %>
+        <a class="image-popup-vertical-fit" href="<%= asset_path('doctor_2_1.jpg') %>">
+          <%= image_tag 'doctor_2_1.jpg' %>
+        </a>
+        <a class="image-popup-vertical-fit" href="<%= asset_path('doctor_2_2.jpg') %>">
+          <%= image_tag 'doctor_2_2.jpg' %>
+        </a>
+        <a class="image-popup-vertical-fit" href="<%= asset_path('doctor_2_3.jpg') %>">
+          <%= image_tag 'doctor_2_3.jpg' %>
+        </a>
   На пикнике “US Baby Time”. Доктор ДиЖиакомо со своими клиентами.
-    <%= image_tag 'doctor_2_4.jpg' %>
+        <a class="image-popup-vertical-fit" href="<%= asset_path('doctor_2_4') %>">
+          <%= image_tag 'doctor_2_4.jpg' %>
+        </a>
   </p>
 </div>

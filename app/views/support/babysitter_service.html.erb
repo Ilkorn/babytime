@@ -29,8 +29,12 @@
   </ul>
 
   <div>
-    <%= image_tag 'extra/24_1_1.jpg', :width => 180, :height => 130, :style => 'margin-left: 5px;' %>
-    <%= image_tag 'extra/24_1_2.jpg', :width => 220, :height => 130, :style => 'margin-left: 15px;' %>
+    <a class="image-popup-vertical-fit" href="<%= asset_path('extra/24_1_1.jpg') %>">
+      <%= image_tag 'extra/24_1_1.jpg', :width => 180, :height => 130, :style => 'margin-left: 5px;' %>
+    </a>
+    <a class="image-popup-vertical-fit" href="<%= asset_path('extra/24_1_2.jpg') %>">
+      <%= image_tag 'extra/24_1_2.jpg', :width => 220, :height => 130, :style => 'margin-left: 15px;' %>
+    </a>
   </div>
 
   <h3>В обязанности няни входит:</h3>
@@ -67,7 +71,9 @@
   <p>Посетите раздел <%= link_to 'О нас', page_about_us_path %>, чтобы больше узнать о нашей компании.</p>
 
   <div>
-    <%= image_tag 'extra/24_2_1.jpg', :width => 300, :height => 180, :style => 'margin-left: 60px;' %>
+    <a class="image-popup-vertical-fit" href="<%= asset_path('extra/24_2_1.jpg') %>">
+      <%= image_tag 'extra/24_2_1.jpg', :width => 300, :height => 180, :style => 'margin-left: 60px;' %>
+    </a>
   </div>
 
 </div>

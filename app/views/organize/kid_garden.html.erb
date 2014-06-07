@@ -25,8 +25,12 @@
         характеристика', organize_kid_garden_list_path %>
   </p>
   <div>
-    <%= image_tag 'extra/12_1_1.jpg', :width => 200, :height => 140, :style => 'margin-left: 10px;' %>
-    <%= image_tag 'extra/12_1_2.jpg', :width => 200, :height => 140, :style => 'margin-left: 15px;' %>
+    <a class="image-popup-vertical-fit" href="<%= asset_path('extra/12_1_1.jpg') %>">
+      <%= image_tag 'extra/12_1_1.jpg', :width => 200, :height => 140, :style => 'margin-left: 10px;' %>
+    </a>
+    <a class="image-popup-vertical-fit" href="<%= asset_path('extra/12_1_2.jpg') %>">
+      <%= image_tag 'extra/12_1_2.jpg', :width => 200, :height => 140, :style => 'margin-left: 15px;' %>
+    </a>
   </div>
 
   <h3>Гармоничное развитие детей более старшего возраста в частных школах Флориды</h3>
@@ -46,8 +50,12 @@
   </p>
 
   <div>
+    <a class="image-popup-vertical-fit" href="<%= asset_path('extra/12_2_1.jpg') %>">
     <%= image_tag 'extra/12_2_1.jpg', :width => 200, :height => 140, :style => 'margin-left: 10px;' %>
+</a>
+      <a class="image-popup-vertical-fit" href="<%= asset_path('extra/12_2_2.jpg') %>">
     <%= image_tag 'extra/12_2_2.jpg', :width => 200, :height => 140, :style => 'margin-left: 15px;' %>
+          </a>
   </div>
 
   <h3>Компания US BABY TIME рекомендует частные школы в США по многим причинам:</h3>

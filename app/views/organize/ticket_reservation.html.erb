@@ -40,8 +40,14 @@
   </ol>
 
   <div>
-    <%= image_tag 'extra/9_1_1.png', :width => 100, :height => 100, :style => 'margin-left: 5px;' %>
-    <%= image_tag 'extra/9_1_2.jpg', :width => 160, :height => 100 %>
-    <%= image_tag 'extra/9_1_3.jpg', :width => 160, :height => 100 %>
+    <a class="image-popup-vertical-fit" href="<%= asset_path('extra/9_1_1.png') %>">
+      <%= image_tag 'extra/9_1_1.png', :width => 100, :height => 100, :style => 'margin-left: 5px;' %>
+    </a>
+    <a class="image-popup-vertical-fit" href="<%= asset_path('extra/9_1_2.jpg') %>">
+      <%= image_tag 'extra/9_1_2.jpg', :width => 160, :height => 100 %>
+    </a>
+    <a class="image-popup-vertical-fit" href="<%= asset_path('extra/9_1_3.jpg') %>">
+      <%= image_tag 'extra/9_1_3.jpg', :width => 160, :height => 100 %>
+    </a>
   </div>
 </div>
