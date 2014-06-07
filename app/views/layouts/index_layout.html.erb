@@ -2,20 +2,21 @@
 <html>
     <head>
       <title>Babytime</title>
-      <link rel="shortcut icon" href="http://darasgarden.com/favicon.ico" type="image/x-icon">
       <meta name="google-translate-customization" content="936f24a52ae83dee-44616ef718b701a2-g6edf50ceb18b5de3-e">
+      <%= csrf_meta_tags %>
+
+      <link rel="shortcut icon" href="http://darasgarden.com/favicon.ico" type="image/x-icon">
       <%= stylesheet_link_tag    "page", :media => "all" %>
       <%= stylesheet_link_tag    "owl.theme", :media => "all" %>
       <%= stylesheet_link_tag    "owl.carousel", :media => "all" %>
       <%= stylesheet_link_tag    "owl.transitions", :media => "all" %>
-      <%= javascript_include_tag "application" %>
-      <%= csrf_meta_tags %>
+      <link href='http://fonts.googleapis.com/css?family=Oranienbaum&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
       <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
       <script src="/assets/owl.carousel.min.js"></script>
       <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-      <link href='http://fonts.googleapis.com/css?family=Oranienbaum&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-      <link href='http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
       <script>
           function googleTranslateElementInit() {
               new google.translate.TranslateElement({pageLanguage: 'ru', includedLanguages: 'ru,en,de,es,fr,it,pt,yi,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');

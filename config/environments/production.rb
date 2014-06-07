@@ -20,7 +20,7 @@ Babytime::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
-  config.assets.precompile += %w{page.css _reset.css owl.theme.css owl.carousel.css owl.transitions.css owl.carousel.min.js}
+  config.assets.precompile += %w{page.css _reset.css magnific.css owl.theme.css owl.carousel.css owl.transitions.css owl.carousel.min.js magnific.min.js}
 
   # Defaults to Rails.root.join("public/assets")
   # config.assets.manifest = YOUR_PATH
