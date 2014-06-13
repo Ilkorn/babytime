@@ -1,5 +1,6 @@
 class PageController < ApplicationController
   layout 'index_layout', :only => 'index'
+  layout 'photo_gallery', :only => 'photo_gallery'
 
   def index
   end
