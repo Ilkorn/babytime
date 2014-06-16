@@ -1,8 +1,7 @@
 class PageController < ApplicationController
-  layout 'index_layout', :only => 'index'
-  layout 'photo_gallery', :only => 'photo_gallery'
 
   def index
+    render :layout => 'index_layout'
   end
 
   def about_us
@@ -18,6 +17,7 @@ class PageController < ApplicationController
   end
 
   def photo_gallery
+    render :layout => 'photo_gallery'
   end
 
   def contact_us
