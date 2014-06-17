@@ -278,6 +278,11 @@ ul#nav {
   }
   h3 a {
     color: #366;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
   p span {
     font-size: 2em;

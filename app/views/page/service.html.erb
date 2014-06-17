@@ -1,7 +1,7 @@
 <div style="text-align: justify;">
   <h1 class="underlined handwritten" style="font-size: 30px;">Услуги</h1>
 
-  <h3>Организационные услуги</h3>
+  <h3 style="text-align: left;"><%= link_to 'Организационные услуги', organize_index_path %></h3>
 
   <ul style="text-align: left">
     <li>
@@ -26,7 +26,9 @@
     </li>
   </ul>
 
-  <h3>Сопутствующие услуги</h3>
+  <p>
+    <span style="font-size: 1.3em;">Сопутствующие услуги</span>
+  <p>
   <ul style="text-align: left">
     <li>
       <%= link_to organize_excursion_path do %>
@@ -81,7 +83,7 @@
       </ul>
 
 
-  <h3>Сопровождение беременности и родов</h3>
+  <h3 style="text-align: left;"><%= link_to 'Сопровождение беременности и родов', support_index_path %></h3>
   <ul style="text-align: left">
     <li>
       <%= link_to support_doctor_appointment_path do %>
@@ -113,6 +115,13 @@
           Выбор врача-гинеколога и врача-педиатра
       <% end %>
     </li>
+  </ul>
+
+  <p>
+    <span style="font-size: 1.3em;">Сопутствующие услуги</span>
+  <p>
+
+  <ul style="text-align: left">
     <li>
       <%= link_to support_babysitter_service_path do %>
           Услуги няни и гувернантки
@@ -130,7 +139,7 @@
     </li>
   </ul>
 
-  <h3>Иммиграционные и инвестиционные услуги</h3>
+  <h3 style="text-align: left;"><%= link_to 'Иммиграционные и инвестиционные услуги', immigration_index_path %></h3>
   <ul style="text-align: left">
     <li>
       <%= link_to immigration_change_usa_status_path do %>
