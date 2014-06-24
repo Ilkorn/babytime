@@ -18,6 +18,6 @@ class NotificationMailer < ActionMailer::Base
   #
   def notify_customer(order)
     @order = order
-    mail :to => "korneev.box@gmail.com"
+    mail :to => "info@usbabytime.com"
   end
 end
