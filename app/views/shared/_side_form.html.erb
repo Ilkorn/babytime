@@ -1,7 +1,28 @@
 <script>
-  var clickSubmit = function() {
-      $('#visitform').submit();
-  }
+    var clickSubmit = function () {
+        var form = $('#visitform');
+        var dataForPost = {order: {name: $("input[name='name']")[0].value,
+            day: $("select[name='day']")[0].value,
+            detail: $("textarea[name='details']").val(),
+            email: $("input[name='email']")[0].value,
+            month: $("select[name='month']")[0].value,
+            peoples: $("select[name='guests']")[0].value,
+            service: $("select[name='type']")[0].value,
+            telephon_number: $("input[name='phone']")[0].value}
+        };
+
+        $.ajax({ url: '/order/create',
+            type: 'POST',
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))
+            },
+            data: dataForPost,
+            success: function (data) {
+                alert("Спасибо большое Ваш запрос успешно оправлен");
+            }
+
+        });
+    }
 </script>
 <div id="visit">
   <h1 class="underlined font-large" >Спланируйте свой <em class="handwritten" style="font-size: 30px;">визит...</em></h1>
@@ -15,14 +36,13 @@
     <div class="submit">Отзывы</div>
   <% end %>
 
-  <a name="visitform" id="visitform"></a>
-  <form action="" method="post">
+  <form action="/order/create" method="post" id="visitform">
     <label for="name">Имя</label>
     <input name="name" type="text" id="name" class="input" value=""><br>
     <label for="email">Электронная почта</label>
-    <input name="email" type="text" id="email" class="input" value=""><br>
+    <input name="email" type="email" id="email" class="input" value=""><br>
     <label for="phone">Номер телефона</label>
-    <input name="phone" type="text" id="phone" class="input" value=""><br>
+    <input name="phone" type="tel" id="phone" class="input" value=""><br>
     <select name="type" class="select">
       <option value="0">Выбор желаемых услуг</option>
       <option value="Организационные услуги">Организационные услуги</option>
@@ -86,7 +106,7 @@
       <option value="4">4</option>
       <option value="5">5</option>
     </select><br>
-    <label>Детали</label>
+    <label for="details">Детали</label>
     <textarea name="details" cols="10" rows="5" class="textarea"></textarea><br>
     <div class="submit_blue" style="height: 12px; width: 56px; margin-top: 5px;" onclick="clickSubmit()">Отправить</div>
   </form>

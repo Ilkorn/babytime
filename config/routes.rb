@@ -1,4 +1,5 @@
 Babytime::Application.routes.draw do
+  post "order/create"
   get "support/index"
   get "support/babysitter_service"
   get "support/borning_help"
